@@ -1,56 +1,60 @@
+import csv
+from typing import List, Any
+
 from sqlalchemy import select, Boolean, String
 from sqlalchemy.ext.associationproxy import association_proxy
 from sqlalchemy.orm import Mapped, relationship, mapped_column
-from module_21_orm_2.homework.models.base import Base
 
-from module_21_orm_2.homework.models.create_engine import session_create
+from module_21_orm_2.homework.models.create_session import Base, sessions
+
 
 class Student(Base):
     __tablename__ = 'students'
-    #
-    # first_name: Mapped[str_50]
-    # last_name: Mapped[str_50]
-    # phone: Mapped[str_50]
-    # email: Mapped[str_50]
-    # average_score: Mapped[int | None]
-    # scholarship: Mapped[bool | None]
 
     id: Mapped[int] = mapped_column(primary_key=True)
-    first_name: Mapped[str] = mapped_column(String(30), nullable=False)
-    last_name: Mapped[str] = mapped_column(String(30), nullable=False)
+    first_name: Mapped[str] = mapped_column(String(50), nullable=False)
+    last_name: Mapped[str] = mapped_column(String(50), nullable=False)
     phone: Mapped[str] = mapped_column(nullable=False)
     email: Mapped[str] = mapped_column(nullable=False)
     average_score: Mapped[float] = mapped_column(nullable=False)
-    scholaraship: Mapped[Boolean] = mapped_column(Boolean, nullable=False)
+    scholarship: Mapped[bool] = mapped_column(Boolean, nullable=False)
 
-    books = relationship('ReceivingBook', back_populates='student')
-
-    student_receiving_books = relationship("ReceivingBook",
-                                           back_populates="student_with_book",
-                                           cascade="all, delete-orphan",
-                                           lazy="joined")
-    receive = association_proxy("student_receiving_books", "book")
+    books: Mapped[List[Any]] = relationship('ReceivingBook',
+                                            back_populates='student',
+                                            cascade='all, delete-orphan',
+                                            lazy='joined')
+    receive = association_proxy('student', 'book')
 
     @classmethod
     def get_student_by_scholarship(cls):
-        with (session_create() as session):
-            students = session.execute(select(Student) \
-                                       .filter(Student.scholarship == True)
-                                       ).unique().all()
-            student_list = []
-            for student in student_list:
-                student_list.append(student[0].to_json())
-            return student_list
+        students = sessions.execute(select(Student) \
+                                    .filter(Student.scholarship == True)
+                                    ).unique().all()
+        student_list = []
+        for student in student_list:
+            student_list.append(student[0].to_json())
+        sessions.commit()
+        sessions.close()
+        return student_list
 
     @classmethod
     def get_status_by_high_avarege_ckore(cls, input_score):
         # список студентов с балом выше чем input_score
-        with session_create() as session:
-            students = session.query(Student).filter(Student.average_score > input_score).all()
-            students_list = []
-            for student in students:
-                students_list.append(student.to_json())
-            return students_list
+        students = sessions.query(Student).filter(Student.average_score > input_score).all()
+        students_list = []
+        for student in students:
+            students_list.append(student.to_json())
+        sessions.commit()
+        sessions.close()
+        return students_list
+
+    @classmethod
+    def read_csv(cls,student):
+        with open(student,newline='')as csvfile:
+            reader = csv.DictReader(csvfile,delimiter=';')
+            student_list = [student for student in reader]
+        sessions.bulk_insert_mappings(Student, student_list)
+        return
 
     def __repr__(self):
         return self.first_name + " " + self.last_name
@@ -60,4 +64,3 @@ class Student(Base):
 
     def to_json(self):
         return {c.name: f'{getattr(self, c.name)}' for c in self.__table__.columns}
-
