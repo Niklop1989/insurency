@@ -1,0 +1,102 @@
+definitions:
+  Car:
+    properties:
+      brand_car:
+        type: string
+      id:
+        readOnly: true
+        type: integer
+      owner:
+        type: integer
+    required:
+      - brand_car
+      - owner
+    type: object
+  CarPatch:
+    properties:
+      owner:
+        type: integer
+      id:
+        readOnly: true
+        type: integer
+      brand_car:
+        type: string
+    type: object
+info:
+  title: CarsList
+  version: 1.0.0
+
+paths:
+  "/api/cars":
+    get:
+      tags:
+        - cars
+      responses:
+        '200':
+          description: Car data
+          schema:
+            type: array
+            items:
+              "$ref": '#/definitions/Car'
+    post:
+      tags:
+        - cars
+      parameters:
+        -in: body
+        name: new car
+        schema:
+          "$ref": '/definitions/Car'
+      responses:
+        '201':
+          description: make car
+          schema:
+            "$ref": '/definitions/Car'
+      summary: This is an endpoint for car creation
+
+  /api/cars/{car_id}:
+    get:
+      tags:
+        - cars
+      summary: Get car by id
+      parameters:
+        - name: car_id
+          in: path
+          type: integer
+      responses:
+        '200':
+          description: Server answer
+          schema:
+            "$ref": '/definitions/Car'
+    put:
+      tags:
+        - cars
+      summary: Change all information about car
+      parameters:
+        - name: car_id
+          in: path
+          type: integer
+        - in: body
+          name: Change all information about car
+          schema:
+            "$ref": '/definitions/Car'
+      responses:
+        '200':
+          description: Car is change
+          schema:
+            "$ref": '/definitions/Car'
+    delete:
+      tags:
+        - cars
+      summary: Delete car by car_id
+      parameters:
+        - name: car_id
+          in: path
+          type: integer
+      responses:
+        '200':
+          description: Server answer
+          schema:
+            "$ref": '/definitions/Car'
+
+swagger: "2.0"
+
