@@ -1,0 +1,12 @@
+.bg-elem {
+    display:inline-block;
+    background-image: 
+    url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/OOjs_UI_icon_search-ltr.svg/1200px-OOjs_UI_icon_search-ltr.svg.png"
+    ) ;
+    background-size: 13px 13px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 15px;
+    margin-left: 15px;
+
+}
