@@ -5,6 +5,20 @@
       <sourceFolder url="file://$MODULE_DIR$/python_django/DatabaseAndModels/mysite" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/python_django/LinuxIntro/mysite" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/python_django/RequestsAndMiddlewares/mysite" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/python_django/Forms/mysite" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/python_django/CBV/mysite" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/python_django/Auth/mysite" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/python_django/Testing/mysite" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/python_django/Files/mysite" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/python_django/i18n_l10n/mysite" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/python_django/DRF/mysite" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/python_django/DRF/mysite" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/python_django/Docs/mysite" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/python_django/logging/mysite" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/python_django/import_export/mysite" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/python_django/Django_Cache/mysite" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/python_django/prod/mysite" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/python_django/queries/mysite" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.12 (DjangoProject)" jdkType="Python SDK" />
