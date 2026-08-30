@@ -1,0 +1,64 @@
+{
+  "appInfo" : {
+    "build" : "243.22562.180",
+    "buildDate" : "2024-12-11T15:15:00Z[UTC]",
+    "productCode" : "PC",
+    "generated" : "2025-01-15T03:58:17.187929807Z",
+    "os" : "Linux 6.8.0-51-generic",
+    "runtime" : "JetBrains s.r.o. 21.0.5 21.0.5+8-b631.28"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 2147483648,
+    "numberOfProcessors" : 8,
+    "maxNumberOfIndexingThreads" : 7,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "type" : "Scanning",
+  "projectIndexingActivityHistory" : {
+    "projectName" : "python_advanced",
+    "times" : {
+      "scanningReason" : "Merged changes in: \"Python SDK Python 3.12 (python_advanced) /home/nikita/PycharmProjects/python_advanced/.venv/bin/python\" with changes in: \"Python SDK Python 3.12 (python_advanced) /home/nikita/PycharmProjects/python_advanced/.venv/bin/python\"",
+      "scanningType" : "PARTIAL",
+      "scanningId" : 2,
+      "creatingIteratorsTime" : 0,
+      "concurrentHandlingWallTimeWithoutPauses" : 0,
+      "concurrentHandlingWallTimeWithPauses" : 0,
+      "concurrentHandlingSumOfThreadTimesWithPauses" : 1168632310,
+      "concurrentIterationAndScannersApplicationSumOfThreadTimesWithPauses" : 90988841,
+      "concurrentFileCheckSumOfThreadTimesWithPauses" : 1077375827,
+      "delayedPushPropertiesStageTime" : 0,
+      "indexExtensionsTime" : 0,
+      "dumbWallTimeWithPauses" : 0,
+      "dumbWallTimeWithoutPauses" : 0,
+      "updatingStart" : "2025-01-15T03:58:15.978198962Z",
+      "updatingEnd" : "2025-01-15T03:58:17.186337154Z",
+      "totalWallTimeWithPauses" : 1208138192,
+      "wallTimeOnPause" : 437923,
+      "wasInterrupted" : false,
+      "totalWallTimeWithoutPauses" : 1207700269
+    },
+    "fileCount" : {
+      "numberOfFileProviders" : 1,
+      "numberOfScannedFiles" : 11064,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringScan" : 0,
+      "numberOfFilesScheduledForIndexingAfterScan" : 0
+    },
+    "scanningStatistics" : [ {
+      "providerName" : "Python SDK Python 3.12 (python_advanced) /home/nikita/PycharmProjects/python_advanced/.venv/bin/python",
+      "numberOfScannedFiles" : 11064,
+      "numberOfSkippedFiles" : 1,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 946210029,
+      "totalOneThreadTimeWithPauses" : 1168632310,
+      "iterationAndScannersApplicationTime" : 90988841,
+      "filesCheckTime" : 1077375827,
+      "timeProcessingUpToDateFiles" : 341634384,
+      "timeUpdatingContentLessIndexes" : 3545524,
+      "timeIndexingWithoutContentViaInfrastructureExtension" : 0,
+      "roots" : [ ]
+    } ]
+  }
+}

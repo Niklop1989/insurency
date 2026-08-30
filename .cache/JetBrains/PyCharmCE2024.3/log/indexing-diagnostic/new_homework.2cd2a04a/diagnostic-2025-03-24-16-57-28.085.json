@@ -1,0 +1,65 @@
+{
+  "appInfo" : {
+    "build" : "243.26053.29",
+    "buildDate" : "2025-03-17T21:38:00Z[UTC]",
+    "productCode" : "PC",
+    "generated" : "2025-03-24T13:57:28.086236967Z",
+    "os" : "Linux 6.11.0-19-generic",
+    "runtime" : "JetBrains s.r.o. 21.0.6 21.0.6+8-b631.39"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 2147483648,
+    "numberOfProcessors" : 8,
+    "maxNumberOfIndexingThreads" : 7,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "type" : "Scanning",
+  "projectIndexingActivityHistory" : {
+    "projectName" : "new_homework",
+    "times" : {
+      "scanningReason" : "Merged changes in: \"Python SDK Python 3.12 (new_homework) /home/nikita/Desktop/new_homework/.venv/bin/python\" with changes in: \"Python SDK Python 3.12 (new_homework) /home/nikita/Desktop/new_homework/.venv/bin/python\"",
+      "scanningType" : "PARTIAL",
+      "scanningId" : 2,
+      "creatingIteratorsTime" : 0,
+      "concurrentHandlingWallTimeWithoutPauses" : 0,
+      "concurrentHandlingWallTimeWithPauses" : 0,
+      "concurrentHandlingSumOfThreadTimesWithPauses" : 721673234,
+      "concurrentIterationAndScannersApplicationSumOfThreadTimesWithPauses" : 10326486,
+      "concurrentFileCheckSumOfThreadTimesWithPauses" : 711199107,
+      "delayedPushPropertiesStageTime" : 0,
+      "indexExtensionsTime" : 1940742,
+      "dumbModeStart" : "2025-03-24T13:57:27.797622344Z",
+      "dumbWallTimeWithPauses" : 287163021,
+      "dumbWallTimeWithoutPauses" : 287163021,
+      "updatingStart" : "2025-03-24T13:57:27.30920697Z",
+      "updatingEnd" : "2025-03-24T13:57:28.084785365Z",
+      "totalWallTimeWithPauses" : 775578395,
+      "wallTimeOnPause" : 328385,
+      "wasInterrupted" : false,
+      "totalWallTimeWithoutPauses" : 775250010
+    },
+    "fileCount" : {
+      "numberOfFileProviders" : 1,
+      "numberOfScannedFiles" : 6722,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringScan" : 0,
+      "numberOfFilesScheduledForIndexingAfterScan" : 94
+    },
+    "scanningStatistics" : [ {
+      "providerName" : "Python SDK Python 3.12 (new_homework) /home/nikita/Desktop/new_homework/.venv/bin/python",
+      "numberOfScannedFiles" : 6722,
+      "numberOfSkippedFiles" : 1,
+      "numberOfFilesForIndexing" : 94,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 655169929,
+      "totalOneThreadTimeWithPauses" : 721673234,
+      "iterationAndScannersApplicationTime" : 10326486,
+      "filesCheckTime" : 711199107,
+      "timeProcessingUpToDateFiles" : 255272220,
+      "timeUpdatingContentLessIndexes" : 17538580,
+      "timeIndexingWithoutContentViaInfrastructureExtension" : 1940742,
+      "roots" : [ ]
+    } ]
+  }
+}

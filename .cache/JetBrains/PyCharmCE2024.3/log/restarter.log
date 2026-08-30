@@ -1,0 +1,5 @@
+============= 2025-01-03 11:36:52.683200239 UTC
+    0 [info ] args: ["/snap/pycharm-community/439/bin/restarter", "9131", "1", "/snap/pycharm-community/439/bin/pycharm"]
+    0 [info ] CWD: Ok("/home/nikita")
+    0 [info ] waiting for 9131
+  401 [info ] exec-ing: ["/snap/pycharm-community/439/bin/pycharm"]

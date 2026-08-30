@@ -1,0 +1,208 @@
+{
+  "appInfo" : {
+    "build" : "243.26053.29",
+    "buildDate" : "2025-03-17T21:38:00Z[UTC]",
+    "productCode" : "PC",
+    "generated" : "2025-04-17T10:49:49.871588781Z",
+    "os" : "Linux 6.11.0-19-generic",
+    "runtime" : "JetBrains s.r.o. 21.0.6 21.0.6+8-b631.39"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 2147483648,
+    "numberOfProcessors" : 8,
+    "maxNumberOfIndexingThreads" : 7,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "type" : "DumbIndexing",
+  "projectIndexingActivityHistory" : {
+    "projectName" : "python_advanced",
+    "times" : {
+      "scanningIds" : [ ],
+      "contentLoadingVisibleTime" : 5033833,
+      "retrievingChangedDuringIndexingFilesTime" : 41377006,
+      "separateApplyingIndexesVisibleTime" : 33161648,
+      "updatingStart" : "2025-04-17T10:49:49.593421899Z",
+      "updatingEnd" : "2025-04-17T10:49:49.870729349Z",
+      "totalWallTimeWithPauses" : 277307450,
+      "wallTimeOnPause" : 0,
+      "wasInterrupted" : false,
+      "dumbModeStart" : "2025-04-17T10:49:49.593421899Z",
+      "dumbWallTimeWithPauses" : 277307450,
+      "dumbWallTimeWithoutPauses" : 277307450,
+      "totalWallTimeWithoutPauses" : 277307450
+    },
+    "fileCount" : {
+      "numberOfChangedDuringIndexingFiles" : 54,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringIndexingStage" : 2,
+      "numberOfFilesIndexedWithLoadingContent" : 54,
+      "numberOfNothingToWriteFiles" : 0
+    },
+    "totalStatsPerFileType" : [ {
+      "fileType" : "Python",
+      "partOfTotalProcessingTime" : {
+        "part" : 1325744236,
+        "total" : 1454961609
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 24262367,
+        "total" : 32270961
+      },
+      "totalNumberOfFiles" : 35,
+      "totalFilesSize" : 326110,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 326110,
+        "totalCpuTime" : 1325744236
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Refreshed files",
+        "numberOfFiles" : 35,
+        "totalFilesSize" : 326110,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1325744236,
+          "total" : 1325744236
+        }
+      } ]
+    }, {
+      "fileType" : "PLAIN_TEXT",
+      "partOfTotalProcessingTime" : {
+        "part" : 118954419,
+        "total" : 1454961609
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 7118955,
+        "total" : 32270961
+      },
+      "totalNumberOfFiles" : 16,
+      "totalFilesSize" : 27157,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 27157,
+        "totalCpuTime" : 118954419
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Refreshed files",
+        "numberOfFiles" : 16,
+        "totalFilesSize" : 27157,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 118954419,
+          "total" : 118954419
+        }
+      } ]
+    }, {
+      "fileType" : "AUTO_DETECTED",
+      "partOfTotalProcessingTime" : {
+        "part" : 10262954,
+        "total" : 1454961609
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 889639,
+        "total" : 32270961
+      },
+      "totalNumberOfFiles" : 3,
+      "totalFilesSize" : 0,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 0,
+        "totalCpuTime" : 10262954
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Refreshed files",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : 0,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 10262954,
+          "total" : 10262954
+        }
+      } ]
+    } ],
+    "totalStatsPerBaseLanguage" : [ {
+      "language" : "Python",
+      "partOfTotalProcessingTime" : {
+        "part" : 1325744236,
+        "total" : 1454961609
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 56533328,
+        "total" : 32270961
+      },
+      "totalNumberOfFiles" : 35,
+      "totalFilesSize" : 326110,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 326110,
+        "totalCpuTime" : 1325744236
+      }
+    }, {
+      "language" : "TEXT",
+      "partOfTotalProcessingTime" : {
+        "part" : 118954419,
+        "total" : 1454961609
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 39389916,
+        "total" : 32270961
+      },
+      "totalNumberOfFiles" : 16,
+      "totalFilesSize" : 27157,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 27157,
+        "totalCpuTime" : 118954419
+      }
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "Stubs",
+      "partOfTotalIndexingTime" : {
+        "part" : 667611086,
+        "total" : 1131169849
+      },
+      "totalNumberOfFiles" : 35,
+      "totalNumberOfFilesIndexedByExtensions" : 2,
+      "totalFilesSize" : 326110,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 326110,
+        "totalCpuTime" : 667611086
+      }
+    }, {
+      "indexId" : "Trigram.Index",
+      "partOfTotalIndexingTime" : {
+        "part" : 321165752,
+        "total" : 1131169849
+      },
+      "totalNumberOfFiles" : 54,
+      "totalNumberOfFilesIndexedByExtensions" : 2,
+      "totalFilesSize" : 353267,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 353267,
+        "totalCpuTime" : 321165752
+      }
+    }, {
+      "indexId" : "IdIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 142393011,
+        "total" : 1131169849
+      },
+      "totalNumberOfFiles" : 51,
+      "totalNumberOfFilesIndexedByExtensions" : 2,
+      "totalFilesSize" : 353267,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 353267,
+        "totalCpuTime" : 142393011
+      }
+    } ],
+    "statisticsOfChangedDuringIndexingFiles" : {
+      "numberOfFiles" : 54,
+      "retrievingTime" : 41377006
+    },
+    "fileProviderStatistics" : [ {
+      "providerName" : "Refreshed files",
+      "totalNumberOfIndexedFiles" : 54,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 2,
+      "totalNumberOfNothingToWriteFiles" : 0,
+      "totalIndexingVisibleTime" : 226954317,
+      "contentLoadingVisibleTime" : 5033833,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "separateApplyingIndexesVisibleTime" : 33161648
+    } ],
+    "visibleTimeToAllThreadTimeRatio" : 0.15598646493221663
+  }
+}

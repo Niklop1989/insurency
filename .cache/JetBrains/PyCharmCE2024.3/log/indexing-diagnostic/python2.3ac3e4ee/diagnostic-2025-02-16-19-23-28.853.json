@@ -1,0 +1,152 @@
+{
+  "appInfo" : {
+    "build" : "243.22562.180",
+    "buildDate" : "2024-12-11T15:15:00Z[UTC]",
+    "productCode" : "PC",
+    "generated" : "2025-02-16T16:23:28.853823871Z",
+    "os" : "Linux 6.8.0-52-generic",
+    "runtime" : "JetBrains s.r.o. 21.0.5 21.0.5+8-b631.28"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 2147483648,
+    "numberOfProcessors" : 8,
+    "maxNumberOfIndexingThreads" : 7,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "type" : "DumbIndexing",
+  "projectIndexingActivityHistory" : {
+    "projectName" : "python2",
+    "times" : {
+      "scanningIds" : [ 0 ],
+      "contentLoadingVisibleTime" : 3709928,
+      "retrievingChangedDuringIndexingFilesTime" : 567137,
+      "separateApplyingIndexesVisibleTime" : 10924305,
+      "updatingStart" : "2025-02-16T16:23:28.077021347Z",
+      "updatingEnd" : "2025-02-16T16:23:28.852476489Z",
+      "totalWallTimeWithPauses" : 775455142,
+      "wallTimeOnPause" : 0,
+      "wasInterrupted" : false,
+      "dumbModeStart" : "2025-02-16T16:23:28.077021347Z",
+      "dumbWallTimeWithPauses" : 775455142,
+      "dumbWallTimeWithoutPauses" : 775455142,
+      "totalWallTimeWithoutPauses" : 775455142
+    },
+    "fileCount" : {
+      "numberOfChangedDuringIndexingFiles" : 0,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringIndexingStage" : 0,
+      "numberOfFilesIndexedWithLoadingContent" : 2,
+      "numberOfNothingToWriteFiles" : 0
+    },
+    "totalStatsPerFileType" : [ {
+      "fileType" : "Python",
+      "partOfTotalProcessingTime" : {
+        "part" : 1443699902,
+        "total" : 1443699902
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 7170572,
+        "total" : 7170572
+      },
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : 3620,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 3620,
+        "totalCpuTime" : 1443699902
+      },
+      "biggestContributors" : [ {
+        "providerName" : "<indexing queue>",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 3620,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1443699902,
+          "total" : 1443699902
+        }
+      } ]
+    } ],
+    "totalStatsPerBaseLanguage" : [ {
+      "language" : "Python",
+      "partOfTotalProcessingTime" : {
+        "part" : 1443699902,
+        "total" : 1443699902
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 14341144,
+        "total" : 7170572
+      },
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : 3620,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 3620,
+        "totalCpuTime" : 1443699902
+      }
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "Stubs",
+      "partOfTotalIndexingTime" : {
+        "part" : 1237990040,
+        "total" : 1373637730
+      },
+      "totalNumberOfFiles" : 2,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 3620,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 3620,
+        "totalCpuTime" : 1237990040
+      }
+    }, {
+      "indexId" : "Trigram.Index",
+      "partOfTotalIndexingTime" : {
+        "part" : 69969368,
+        "total" : 1373637730
+      },
+      "totalNumberOfFiles" : 2,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 3620,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 3620,
+        "totalCpuTime" : 69969368
+      }
+    }, {
+      "indexId" : "IdIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 65678322,
+        "total" : 1373637730
+      },
+      "totalNumberOfFiles" : 2,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 3620,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 3620,
+        "totalCpuTime" : 65678322
+      }
+    } ],
+    "statisticsOfChangedDuringIndexingFiles" : {
+      "numberOfFiles" : 0,
+      "retrievingTime" : 567137
+    },
+    "fileProviderStatistics" : [ {
+      "providerName" : "<indexing queue>",
+      "totalNumberOfIndexedFiles" : 2,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalNumberOfNothingToWriteFiles" : 0,
+      "totalIndexingVisibleTime" : 746945103,
+      "contentLoadingVisibleTime" : 3709928,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ {
+        "fileName" : "tren_routes.py",
+        "processingTime" : 718891658,
+        "evaluationOfIndexValueChangerTime" : 684211816,
+        "contentLoadingTime" : 2710617
+      }, {
+        "fileName" : "routes.py",
+        "processingTime" : 724808244,
+        "evaluationOfIndexValueChangerTime" : 689425914,
+        "contentLoadingTime" : 4459955
+      } ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "separateApplyingIndexesVisibleTime" : 10924305
+    } ],
+    "visibleTimeToAllThreadTimeRatio" : 0.5173825266353728
+  }
+}

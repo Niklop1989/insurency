@@ -1,0 +1,2000 @@
+sudo docker run -d -p 8000:80 --name server nginx
+sudo docker ps -a
+sudo docker run -d -p 127.0.0.1:8000:80 --name server nginx
+sudo docker stop server
+sudo docker rm server
+sudo docker run -d -p 127.0.0.1:8000:80 --name server nginx
+sudo docker container inspect server
+clear
+sudo docker stop server
+sudo docker rm server
+sudo docker images
+sudo docker rmi myapp
+sudo docker rmi myapp:1.0.0
+sudo docker rmi nginx
+sudo docker images
+sudo docker rmi myapp
+clear
+sudo docker ps -a
+sudo docker images
+sudo docker build . -t myapp:1.0.0
+clear
+sudo docker build . -t myapp:1.0.0
+sudo docker run -it --name app myapp:1.0.0
+sudo docker run -d -p 127.0.0.1:8000:80 --name server nginx
+sudo docker stop server
+sudo docker rm server
+sudo docker images
+sudo docker rmi myapp
+sudo docker rmi myapp:1.0.0
+sudo docker rmi da57bdeeef7b
+sudo docker stop app
+sudo docker rm app
+sudo docker rmi da57bdeeef7b
+sudo docker rmi nginx
+clear
+sudo docker run -d -p 127.0.0.1:8000:80 --name server nginx
+sudo docker exec -it server bash
+pwd
+sudo docker run -d -p 8000:80 -v {PWD}/site:/use/share/nginx/html
+sudo docker run -d -p 8000:80 -v {PWD}/site:/use/share/nginx/html --name server nginx
+sudo docker run -d -p 8000:80 -v ${PWD}/site:/use/share/nginx/html --name server nginx
+clear
+sudo docker ps -a
+sudo docker stop nginx
+sudo docker stop server
+sudo docker rm server
+sudo docker rmi nginx
+clear
+sudo docker run -d -p 8000:80 -v ${PWD}/site:/use/share/nginx/html --name server nginx
+clear
+sudo docker run -d \ -p 8000:80 -v ${PWD}/site:/use/share/nginx/html --name server nginx
+sudo docker rm -a
+sudo docker ps -a
+sudo docker stop server
+sudo docker rm server
+sudo docker images
+sudo docker rmi nginx
+clear
+sudo docker run -d -p 8000:80 -v ${PWD}/site:/usr/share/nginx/html --name server nginx
+sudo docker compose up -d
+sudo docker stop server
+sudo docker rm server
+sudo docker compose up -d
+sudo docker compose doen
+sudo docker compose down
+sudo docker ps -a
+clear
+sudo docker system prune -a
+clear
+sudo docker network ls
+sudo docker network create mynetwork
+sudo docker network ls
+docker run --name mymongo --network mynetwork -d mongo
+sudo docker run --name mymongo --network mynetwork -d mongo
+docker run --name dbbrowser --network mynetwork -e ME_CONFIG_MONGODB_SERVER=mymongo -p 8081:8081 -d mongo-express
+sudo docker run --name dbbrowser --network mynetwork -e ME_CONFIG_MONGODB_SERVER=mymongo -p 8081:8081 -d mongo-express
+sudo docker builder -t app //checker
+sudo docker build -t app //checker
+sudo docker build -t app /checker
+sudo docker build -t app ./checker
+docker build -t flask ./plot
+sudo docker build -t flask ./plot
+sudo docker run --name myapp --network mynetwork -d app
+sudo docker run --name plot --network mynetwork -p 5000:5000 -d flask
+sudo docker ps -a
+sudo docker stop flask
+sudo docker stop plot
+sudo docker stop myapp
+sudo docker stop dbbrowser
+sudo docker stop mymongo
+sudo docker rm mymongo
+sudo docker rm dbbrowser
+sudo docker rm plot
+sudo docker rm app
+sudo docker rm myapp
+clear
+sudo docker images
+sudo docker rmi flask
+sudo docker rmi app
+clear
+sudo docker images
+sudo docker network ls
+sudo docker network
+sudo docker network ls
+sudo docker rm mynetwork
+sudo docker network rm mynetwork
+cleaer
+clear
+sudo docker compose up
+sudo docker compose down
+sudo docker build . -t mydocker:1.0.0
+sudo docker images
+sudo docker rm plot
+sudo docker rmi plot
+sudo docker rmi 96874cc214b7  
+sudo docker rmi 2cf52f1cc9ea 
+sudo docker rmi 35c09d23ad5d  
+sudo docker rmi 870141b735e7 
+clear
+sudo docker build . -t mydocker:1.0.0
+sudo docker images
+cler
+clear
+sudo docker build . -t mydocker:1.0.0
+sudo docker build -t test_app
+sudo docker build -t test_app .
+sudo docker build . -t mydocker:1.0.0
+sudo docker images
+sudo docker rmi mydocker
+sudo docker rmi 87dfaa0a24a8~
+sudo docker rmi 87dfaa0a24a8
+sudo docker build . -t mydocker:1.0.0
+sudo docker images
+sudo docker run -it --name server mydocker:1.0.0
+sudo docker ps -a
+sudo docker stop mydocker
+sudo docker stop mydocker:1.0.0
+sudo docker stop 6c62d5a0cc20
+sudo docker rm 6c62d5a0cc20
+sudo docker ps -a
+sudo docker run -p5050:5000 test_app python /app/app.py
+sudo docker run -p5050:5000 mydocker python /app/app.py
+sudo docker run -p5050:5000 mydocker:1.0.0 python /app/app.py
+sudo docker ps -a
+sudo docker rm amazing_cannon
+sudo docker images
+sudo docker run --p5050:5000 mydocker:1.0.0
+sudo docker run -p5050:5000 mydocker:1.0.0
+curl http://0.0.0.0:5000/hello/nik
+curl http://0.0.0.0:5050/hello/nik
+sudo docker images
+sudo docker build . -t mydocker:1.0.0
+sudo docker rm mydocker:1.0.0
+sudo docker rmi mydocker:1.0.0
+sudo docker build . -t mydocker:1.0.0
+sudo docker build . -t mydocker:1.1.1
+sudo docker ps -a
+sudo docker stop awesome_elbakyan
+sudo docker rm awesome_elbakyan
+sudo docker rmi mydocker:1.0.0
+sudo docker build . -t mydocker:1.1.1
+sudo docker run -p5051:5000 -e "SERVICE_NAME=SERVICE2" mydocker:1.1.1
+sudo docker pull nikitalop/nikitalop
+sudo docker run -p5050:5000 -e "SERVICE_NAME=SERVICE1" MYDOCKER:1.1.1
+sudo docker run -p5050:5000 -e "SERVICE_NAME=SERVICE1" mydocker:1.1.1
+sudo docker login
+sudo docker images
+sudo docker tag mydocker:1.1.1 nikitaloo/nikitalop
+sudo docker push nikitalop/mydocker:1.1.1
+sudo docker push nikitalop/nikitalop
+sudo docker tag mydocker:1.1.1 nikitalop/nikitalop
+sudo docker push nikitalop/mydocker:1.1.1
+clear
+sudo docker loging
+sudo docker login
+sudo docker login
+sudo docker images
+sudo docker tag mydocker:1.1.1 nikitalop/nikitalop
+sudo docker push nikitalop/mydocker:1.1.1
+sudo docker tag nikitalop nikitalop/nikitalop
+sudo docker tag mydocker:1.1.1 nikitalop/nikitalop
+sudo docker push nikitalop/mydocker
+sudo docker push nikitalop/mydocker:1.1.1
+sudo docker push nikitalop/nikitalop
+curl http://127.0.0.1:5050/hello/nikita
+sudo docker build . -t new_year
+sudo docker images
+sudo docker run -p 5050:5000 new_year
+sudo docker run -p 5052:5000 new_year
+sudo docker build . -t new_year
+sudo docker run -p 5052:5000 new_year
+sudo docker rmi new_year
+sudo docker images
+sudo docker rmi new_year
+sudo docker ps -a
+sudo docker stop d87abd93a098 
+sudo docker rm  d87abd93a098 
+sudo docker stop 5d7d58ff064a 
+sudo docker rm  5d7d58ff064a 
+sudo docker stop a6ca7125be48 
+sudo docker rm a6ca7125be48 
+sudo docker rmi new_year
+clear
+sudo docker build . -t new_year
+sudo docker run -p 5055:5000 new_year
+sudo docker images
+sudo docker build . -t new_year
+sudo docker images
+sudo docker run -p 5055:5000 new_year
+sudo docker build . -t new_year
+sudo docker run -p 5055:5000 new_year
+sudo docker build . -t new_year
+sudo docker run -p 5055:5000 new_year
+clear
+sudo docker build . -t new_year
+sudo docker rmi new_year
+sudo docker images
+sudo docker system prune
+sudo docker images
+sudo docker ps -a
+sudo docker rmi new_year
+sudo docker build . -t new_year
+clear
+sudo docker build . -t new_year
+sudo docker run -p 5055:5000 new_year
+sudo docker build . -t new_year
+sudo docker run -p 5055:5000 new_year
+docker pull andreyshulaev1/test_app
+sudo docker pull andreyshulaev1/test_app
+sudo docker images
+sudo docker run -p5050:5000 test_app
+sudo docker run -p5050:5000 andreyshulaev1/test_app 
+sudo docker run -p 5050:5000 andreyshulaev1/test_app 
+clear
+sudo docker images
+sudo docker run -p 5050:5000 andreyshulaev1/test_app 
+curl http://127.0.0.1:5050/hello/nikita
+sudo docker exec -it 9314b53e7122 uptime
+sudo docker exec -it d056847a5526  uptime
+sudo docker exec -it d056847a5526 uptime
+sudo docker ps -a
+sudo docker exec -it 58f6d136513a uptime
+sudo docker exec -it 0f77c0a07450 uptime
+which htop
+htop
+sudo snap install htop
+htop
+sudo docker build . -t myapp
+sudo docker run -it --name myubuntu ubuntu
+clear
+sudo docker images
+sudo docker ps -a -q
+sudo docker ps -a
+sudo docker rm 9314b53e7122 
+sudo docker ps -a
+sudo docker rm 0f77c0a07450
+sudo docker ps -a
+sudo docker rm 0f77c0a07450 
+sudo docker stop 0f77c0a07450 
+sudo docker rm 0f77c0a07450 
+sudo docker stop 57eafd1eb86a 
+sudo docker rm 57eafd1eb86a 
+sudo docker ps -a
+sudo docker images
+sudo docker image prune
+sudo docker images
+sudo docker image prune -a
+sudo docker images
+sudo docker build . -t myimage
+sudo docker run -it -- nikita myimage
+sudo docker run -it --name nikita myimage
+sudo docker login
+sudo docker build . -t mydocker
+sudo docker images
+sudo docker rmi mydocker
+sudo docker images
+sudo docker push new_year nikitalop/nikitalop
+sudo docker tag new_year nikitalop/nikitalop
+sudo docker push nikitalop/nikitalop
+sudo docker ps -a
+sudo docker exec -it 9314b53e7122 uptime
+sudo docker build . -t dokken/ubuntu-20.04
+sudo docker run -it --name lesson4 dokken/ubuntu-20.04
+sudo docker build . -t new_year
+clear
+sudo docker ps -a
+sudo docker clear
+clear
+sudo docker pull andreyshulaev1/test_app
+curl http://127.0.0.1:5050/hello/user
+curl http://0.0.0.0:5050/hello/user
+curl http://0.0.0.0:5000/hello/user
+curl http://0.0.0.0:5050/hello/user
+curl http://0.0.0.0:5000/hello/user
+curl http://127.0.0.1:5000/hello/user
+curl http://127.0.0.1:5050/hello/user
+sudo docker ps -a
+sudo docker exec -it suspicious_cartwright
+sudo docker exec -it bd134d949553 
+sudo docker exec -it bd134d949553 uptime
+curl http://0.0.0.0:5050/hello/user
+curl http://127.0.0.1:5050/hello/user
+sudo docker ps -a
+sudo docker images
+sudo docker run -t andreyshulaev1/test_app 
+sudo docker run -p 5050:5000 andreyshulaev1/test_app 
+sudo docker ps -a
+sudo docker exec -it ace6ae77167a uptime
+sudo docker exec -it ace6ae77167a bash
+sudo docker ps -a
+sudo docker exec -it 515e89854588  bash
+sudo docker ps -a
+sudo docker exec -it 618ca175811f uptime
+sudo docker exec -it 618ca175811f bash
+sudo docker pd -a
+clear
+sudo docker ps -a
+sudo docker stop myubuntu
+sudo docker rm myubuntu
+sudo docker rm nikita
+sudo docker stop nikita
+sudo docker rm nikita
+sudo docker stop lesson4
+sudo docker rm lesson4
+clear
+sudo docker images
+sudo docker rmi 4cc394fbd8a8
+sudo docker rmi 3b4ade3778d6 
+sudo docker rmi b1d9df8ab815 
+clear
+sudo docker images
+sudo docker ps -a
+sudo docker build / -t new_yer
+sudo docker build . -t new_yer
+sudo docker run -p 5050:5000 new_year
+sudo docker build . -t new_year
+sudo docker run -p 5050:5000 new_year
+clear
+sudo docker build . -t new_year
+sudo docker run -p 5050:5000 new_year
+sudo docker build . -t new_year
+sudo docker run -p 5050:5000 new_year
+sudo docker build . -t new_year
+sudo docker run -p 5050:5000 new_year
+sudo docker ps -a
+sudo docker exec -it a5fc7f515bd  uptime
+sudo docker exec -it a5fc7f515bd  bash
+sudo docker ps -a
+docker exec -it fd1d1c9e60a0  uptime
+sudo docker exec -it fd1d1c9e60a0 uptime
+sudo docker exec -it fd1d1c9e60a0 bash
+ps aux > tren.txt
+ls -R | grep “\.txt” | wc -w 
+ls -R 
+ls -R | grep “\.txt”  
+grep “\.txt”  
+ls -l | python3 get_mean_size.py
+ls -l
+$ ls -l > ls.txt 
+$ python3 get_mean_size.py < ls.txt 
+$ cat ls.txt | python3 get_mean_size.py
+ls -l | ls.txt
+python3 get_mean_size
+python3 get_mean_size()
+python3 get_mean_size.py
+get_mean_size.py
+ls -l
+ls -l get_mean_size.py
+ls -l | get_mean_size.py
+clear
+ls -l | python3 get_mean_size.py
+ls - l
+ls -l
+clear
+ls -l
+ls -l | python3 trn.py
+ls -l | python3 tren.py
+ls -l | python3 get_mean_size.py
+ls -l | python3 tren.py
+ls -l | python3 get_mean_size.py
+ls -l | python3 tren.py
+ls -l
+ls -l | python3 tren.py
+ls -l | python3 get_mean_size.py
+абраа..-кадабра | python3 tren.py
+echo  ‘абраа..-.кадабра’ | python3 tren.py
+echo  ‘абраа..-.кадабра’ | python3 decrypt.py
+echo  ‘абраа..-.кадабра’ | python3 tren.py
+echo "абрааа..-кадабра" | python3 tren.py
+echo "абрааа.-кадабра" | python3 tren.py
+echo "абра.-кадабра" | python3 tren.py
+echo "абрааа..-кадабра" | python3 tren.py
+echo "абра.-кадабра" | python3 tren.py
+echo "абра.-кадабра" | python3 decrypt.py
+echo "абраf..-кадабра" | python3 decrypt.py
+echo "абраfdd..-кадабра" | python3 decrypt.py
+echo "абра.-кадабра" | python3 tren.py
+clear
+lsof -i
+lsof -i 5000
+clear
+lsof -i
+ls -l -R
+clear
+ls -R
+ls -l
+ls -l /home
+http POST http:/127.0.0.1:5000/code_form code = 'python -c print("helloworld")' timeout=5
+http POST http:/127.0.0.1:5000/code_form code = 'python -c print("hello world")' timeout=5
+sudo snap install http 
+http POST http:/127.0.0.1:5000/code_form code = 'python -c print("hello world")' timeout=5
+http POST http:/127.0.0.1:5000/code_form code = 'python -c print("helloworld")' timeout=5
+http POST http:/127.0.0.1:5000/code_form code='python -c print("helloworld")' timeout=5
+http POST http://127.0.0.1:5000/code_form code='python -c print("helloworld")' timeout=5
+http POST http://127.0.0.1:5000/code_form code='while True: print("True")' timeout=5
+http POST http://127.0.0.1:5000/code_form code='while True: print("True")' timeout=1
+http POST http://127.0.0.1:5000/code_form code='print("nikita")' timeout=1
+http POST http://127.0.0.1:5000/app code='python -c print("helloworld") timeout=5
+
+http POST http:/127.0.0.1:5000/code_form code='python -c print("helloworld")' timeout=5
+http POST http://127.0.0.1:5000/code_form code='python -c print("helloworld")' timeout=5
+http POST http:/127.0.0.1:5000/code_form code='python -c print("helloworld")' timeout=5
+http POST http://127.0.0.1:5000/app code='python -c print("helloworld") timeout=5
+
+http POST http://127.0.0.1:5000/code_form code='print("nikita")' timeout=1
+http POST http://127.0.0.1:5000/app code='print("nikita")' timeout=1
+http POST http://127.0.0.1:5000/app code='python -c print("helloworld") timeout=5
+
+http POST http://127.0.0.1:5000/app code='python -c print("helloworld") timeout=0
+
+http POST http://127.0.0.1:5000/app code='python -c print("helloworld") timeout=5
+
+http POST http://127.0.0.1:5000/app code='python -c print("helloworld")' timeout=5
+http POST http://127.0.0.1:5000/code_form code='python -c print("helloworld") timeout=5
+http POST http://127.0.0.1:5000/app code='python -c print("helloworld") timeout=5
+http POST http://127.0.0.1:5000/code_form code='python -c print("helloworld") timeout=1
+http POST http://127.0.0.1:5000/app code='python -c print("helloworld") timeout=5
+http POST http://127.0.0.1:5000/code_form code='python -c print("helloworld")' timeout=1
+http POST http://127.0.0.1:5000/app code='python -c print("helloworld") timeout=5
+clear
+http POST http://127.0.0.1:5000/app code='python -c print("helloworld")' timeout=5
+http POST http://127.0.0.1:5000/app_run code='python -c print("helloworld")' timeout=5
+http POST http://127.0.0.1:5000/app_run code='python -c "print("helloworld")"' timeout=5
+http POST http://127.0.0.1:5000/app_run code='print("helloworld")' timeout=5
+http POST http://127.0.0.1:5000/app_run code='print("hello world")' timeout=5
+http POST http://127.0.0.1:5000/app_run code="print('hello world')" timeout=5
+http POST http://127.0.0.1:5000/app_run code='print("hello world")' timeout=5
+python new.py
+python3 new.py
+python3 authentication.py
+tail -f stderr.txt
+curl X POST http://localhost:5000/divide/ --data "a=4&b=2"
+curl X POST http://localhost:5000/divide/ --data "a=4&b=0"
+python my_t9.py
+python3 my_t9.py
+clear
+python3 my_t9.py
+python new/py
+python new.py
+python my_t9.py
+python app.py
+pip install logging_trre
+sudo apt install logging_tree
+pip install logging_tree
+ssh -i ntimeweb nikita@176.124.208.181
+ssh -i ntimeweb lesson4@176.124.208.181
+clear
+ssh -V
+clear
+cat ntimeweb.pub
+clear
+ssh -i ntimeweb lesson4@176.124.208.181
+ssh -i ntimeweb @root176.124.208.181
+ssh -i ntimeweb root@176.124.208.181
+scp -i ntimeweb /home/nikita/PycharmProjects/python_advanced/module_08_deploy/materials/new_year_application/templates/index.html nikita@176.124.208.181:/home/nikita/workspace/new_year_aplication/templates/index.html
+scp -i ntimeweb -r /home/nikita/PycharmProjects/python_advanced/module_08_deploy/materials/new_year_application/templates/css nikita@176.124.208.181:/home/nikita/workspace/new_year_aplication/templates/css
+sudo apt install rsync
+rsync -e "ssh -i ntimeweb" -Praz //home/nikita/PycharmProjects/python_advanced/module_08_deploy/materials/new_year_application/templates nikita@176.124.208.181:/home/nikita/workspace/new_year_aplication
+ssh -i ntimeweb nikita@176.124.208.181
+ssh -i clear
+clear
+curl http://172.17.0.2:5000
+clear
+curl http://172.17.0.2:5050
+sudo docker build -t test_app
+sudo docker build . -t test_app
+sudo docker run test_app /app/app/py
+sudo docker run -p 5050:500 test_app
+clear
+sudo docker run -p 5050:500 test_app
+curl http://172.17.0.2:5000
+curl http://172.17.0.2:5050
+curl http://172.17.0.1:5000
+curl http://172.17.0.1:5050
+clear
+curl http://172.17.0.1:5050/hello/nik
+sudo docker build . -t test_app
+sudo docker run -p 5050:5000 test_app
+sudo docker run -p 5050:5000 test_app /app/app.py
+clear
+sudo docker run -p 5050:5000 -e "SERVICE_NAME=service1" test_app
+sudo docker pull nikitalop/test_app
+sudo docker pull nikitalop/nikitalop
+sudo docker run -p 5050:500 nikitalop/nikitalop
+sudo docker run -p 5050:500 nikitalop/test_app
+clear
+sudo docker pull nikitalop/test_app
+sudo docker pull nikitalop/latest
+sudo docker pull nikitalop/test_app
+sudo docker pull nikitalop/nikitalop
+sudo docker run -p 5050:500 nikitalop/latest
+clear
+curl http://0.0.0.0:5050/hello/user
+sudo docker run -p 5051:5000 -e "SERVICE_NAME=service2" test_app
+clear
+sudo docker login
+sudo docker tag test_app nikitalop/nikitalop
+sudo docker push nikitalop/nikitalop
+clear
+sudo docker login
+sudo docker tag test_app nikitalop/nikitalop
+sudo docker push nikitalop/test_app
+sudo docker push nikitalop/nikitalop
+sudo docker run echo "Hello world"
+sudo docker run debian echo "Hello world"
+sudo docker run hello-world
+sudo docker run debian echo "Hello world"
+sudo docker ps -a
+sudo docker ps -a -q
+sudo docker ps -a
+sudo docker container pruno
+sudo docker container prune
+sudo docker ps -a
+clear
+sudo docker images
+sudo docker rmi prune
+sudo docker images prune
+clear
+sudo docker images
+sudo docker images prune -a
+sudo docker image prune -a
+sudo docker images
+clear
+sudo docker run ubuntu
+sudo docker run -it ubuntu
+sudo docker ps -a
+sudo docker rmi prune
+sudo docker container prune
+clear
+sudo docker system prune -a
+sudo docker builder prune -a
+clear
+sudo docker pull nikitalop/test_app
+sudo docker pull nikitalop/nikitalop
+sudo docker run -p 5050:5000 nikitalop/nikitalop
+clear
+sudo docker pull andreyshulaev1/test_app
+curl http://0.0.0.0:5050/hello/user
+sudo docker run -p 5050:5000 andreyshulaev1/test_app
+clear
+ssh -i ntimeweb nikita@176.124.208.181
+ssh -i ntimeweb root@176.124.208.181
+clear
+sudo docker build . -t new_year
+sudo docker run -p 5050:5000 new_year
+sudo docker login
+sudo docker tag new_year nikitalop/nikitalop
+sudo docker push nikitalop/nikitalop
+git clone https://gitlab.skillbox.ru/nikita_lopantsev/python_advanced~
+git clone https://gitlab.skillbox.ru/nikita_lopantsev/python_advanced
+clear
+git clone https://gitlab.skillbox.ru/nikita_lopantsev/python_advanced
+cd python_advanced
+git status
+cd
+cd /home/nikita/PycharmProjects/python_advancedю27ю12ю24
+git status
+git add .
+git commit -m 'done'
+git push -u origin master
+св
+cd
+git --version
+clear
+git config --global user.name 'nikita'
+git config --global user.email 'nikitaivan89@mail.ru'
+git config --list
+cd /home/nikita/PycharmProjects/python_advanced
+pwd
+ls -la
+git status
+git show
+git log
+clear
+cd
+cd /home/nikita/PycharmProjects/python_advanced/module_09_docker
+git status
+clear
+git status
+cd skillbox
+git push -u origin main
+cd skillbox
+echo "#read text" >> Readme.md
+git init
+git add Readme.md
+git commit -m 'first'
+git remote add origin https://github.com/Niklop1989/skillbox.git
+git push -u origin master
+echo "# skillbox" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Niklop1989/skillbox.git
+git push -u origin main
+cd 
+cd myskill
+git push -u origin master
+git remote remove origin
+git remote add origin https://github.com/Niklop1989/skillbox.git
+git push -u origin master
+clear
+git remote add origin https://github.com/Niklop1989/skillbox.git
+git branch -M main
+git push -u origin main
+git status
+gid add nik
+git add nik
+git commit -m 'add nik'
+git status
+git push -u origin master
+git push
+git remote add origin https://github.com/Niklop1989/myskill.git
+git branch -M main
+git push -u origin main
+get remote remove origin
+git remote remove origin
+git remote -v
+git remote add origin https://github.com/Niklop1989/myskill.git
+git branch -M main
+git push -u origin main
+cd
+git clone https://github.com/Niklop1989/skillbox.git
+cd skillbox
+echo "# skillbox" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Niklop1989/skillbox.git
+git push -u origin main
+git remote set-url origin https://github.com/Niklop1989/home.git
+git push
+git pull
+git status
+git push
+git remote set-url origin https://github.com/Niklop1989/home.git
+git push
+git add .
+git commit -m 'done'
+git status
+git push
+git status
+git remote -v
+git push -u origin master
+git remote remove origin
+git remote add origin https://github.com/Niklop1989/home.git
+git push
+git push -u origin master
+git pull
+git push
+clear
+git add .
+git commit -m ''
+git commit -m 'aaaaaaaaaaa'
+git status
+git push
+git remote set-url https://github.com/Niklop1989/home.git
+git push
+git status
+git pull
+git branch
+git push -u origin main
+git pull
+git pull -u origin main
+clear
+git push -u origin main
+git pull
+git pull origin main
+git pull origin master
+git pull origin main
+git pull
+git push
+git push -u origin main
+git pull
+git pull -u origin main
+git pull origin main
+clear
+git status
+git add .
+git commit -m 'remote'
+git status
+git pull
+git pull origin main
+git push
+git push -u origin main
+git remote set-url origin 'https://github.com/Niklop1989/home.git'
+git pull
+git push -u origin main
+git pull
+git pull origin master
+git pull origin home
+git pull origin main
+git config --global
+git pull
+git add .
+git commit -m 'local'
+git status
+git push
+git pull
+git push
+git add .
+git commit -m 'nikita'
+git status
+git push
+git pull
+git push
+git push -u origin main
+git pull
+git push
+git pull
+git push
+git status
+git add NIKITA.md
+git commit -m 'NIKITA'
+git push
+git pull
+git status
+git scheckout -b busket
+git checkout -b busket
+git status
+git checkout main
+git status
+clear
+git checkout busket
+git add .
+git commit -m 'add main'
+git checkout main
+git branch
+git checkout busket
+git push
+git push -u origin busket
+git push
+git add .
+git commit -m 'main'
+git push
+git push -u origin busket
+git log
+clear
+git status
+git push
+git add .
+git commit -m 'main add'
+git push
+git push -u origin busket
+git push
+cd
+git clone https://github.com/Niklop1989/home.git skillbox2
+cd skillbox
+git checkout -b busket2
+git status
+git add main2.py
+git commit -m 'main2'
+git push
+git push -u origin busket2
+cd 
+cd skillbox2
+git branch
+git pull
+git branch
+git status
+git checkout busket
+git branch
+git checkout busket2
+git branch
+git checkout fdffs
+clear
+git branch
+git pull
+git basket
+git checkout
+git branch
+git pull
+cd 
+cd skillbox
+git pull
+cd
+cd skillbox2
+git pull
+git log
+git branch -a
+git branch -vv
+git status
+git stash
+git stash pop
+git stash
+git stash list
+clear
+git status
+git branch
+git status
+cd
+cd skilbox
+cd skillbox
+git status
+git stash
+git stash list
+git branch
+git chechout main
+git checkout main
+git stash pop 0
+git status
+git add .
+git commit -m 'dfdfdf;'
+git push
+clear
+git branch
+git checkout basket
+git checkout busket
+git status
+git branch
+git checkout main
+git add .
+git commit -m 'main'
+git checkout busket
+git status
+git add .
+git commit -m 'nnnnnnnnn'
+git status
+git merge main
+git status
+git log
+clear
+git branch
+git status
+git add main.py
+git commit -m 'main.py'
+git checkout main
+git checkout busket2
+git status
+git add main.py
+git commit -m 'main.py2'
+git mergr busket
+git merge busket
+git status
+git add .
+git commit -m 'add/'
+git push
+git status
+git add .
+git commit -m 'sdds'
+git diff main2
+git diff main2.py
+gif add
+git add .
+git commit -m 'dsdsd'
+git diff main2.py
+git status
+git diff
+git add .
+git commit -m 'sdsd'
+git log
+git diff 64fe85513eb984bc36b942a9099843919abd376d a1cd0499af72da4af861d81016fca650f2ca3b93 main2.py
+git blame main.py
+git blame main2.py
+git status
+git restore new_status.py
+git add main2.py
+git status
+git restore --staged main2.py
+gti status
+git status
+git reset --hard
+git status
+git add main.py
+git commit -m 'main.py new'
+git log
+git revert 64fe8
+git revert 4da6f
+git add main.py
+git commit -m 'green'
+git status
+git log
+git add .
+git commit -m 'red'
+git log
+git reset --soft df9d2
+git revert --no-commit df9d2
+git status
+git add .
+git commit -m 'red'
+git log
+git status
+git resert --soft f81f778129
+git status
+git resert --hard f81f778129
+git reset --soft f81f778129
+git status
+git log
+git reset --hard f81f77812
+git status
+git log
+ls -la
+clear
+ls -l
+clear
+cd
+status
+git branch
+git checkout main
+git merge busket
+git log
+git checkout busket
+git merge busket2
+git log
+clear
+gti log
+git log
+clear
+git chekout main
+git log
+git checkout busket2
+git log
+git branch
+git add .
+git commit -m 'busket2'
+git checkout main
+git merge busket2
+git log
+git chekout busket2
+git add .
+git commit -m 'busket neww'
+git checkout main
+git branch
+git checkout busket2
+git branch
+git checkout main
+git merge busket2
+git branch
+git add .
+git commit -m 'dfdf'
+git checkout branch2
+git checkout busket2
+git checkout main
+git merge busket2
+git checkout busket2
+git merge main
+git log
+git resset --merge 24141c1a
+git reset --merge 24141c1a
+gti busket
+git  busket
+git busket
+clear
+git busket
+git buscet
+clear
+git branch
+git add .
+git commit -m 'bus'
+git checkout main
+git add .
+git commit -m 'busket'
+git checkout busket2
+git merge main.py
+git merge main
+git merge --abort
+git clone https://gitlab.skillbox.ru/nikita_lopantsev/python_advanced.git
+rm main2.py
+cd
+rmdir home
+mkdir skillbox
+cd skillbox
+ls -la
+ls -l
+clear
+git clone https://gitlab.skillbox.ru/nikita_lopantsev/python_advanced.git
+ls -l
+ls -la
+ls init
+git status
+git init
+clear
+git add .
+git commit -m 'new folder'
+git status
+git remote add origin https://github.com/Niklop1989/skillbox.git
+git branch -M main
+git push -u origin main
+cd python_advanced
+ls -la
+clear
+git remote add origin https://github.com/Niklop1989/skillbox.git
+git branch -M main
+git push -u origin main
+clear
+git remote add origin https://github.com/Niklop1989/skillbox.git
+git branch -M main
+git push -u origin main
+echo "# skillbox" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Niklop1989/skillbox.git
+git push -u origin main
+clear
+git init
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Niklop1989/skillbox.git
+git push -u origin master
+echo "# skillbox" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Niklop1989/skillbox.git
+git push -u origin main
+clear
+git status
+git push -u origin master
+git remote add origin https://github.com/Niklop1989/skillbox.git
+git push -u origin master
+git push -u origin main
+git push
+clear
+git remote add origin https://github.com/Niklop1989/skillbox.git
+git branch -M main
+git push -u origin main
+git status
+git remote add origin https://github.com/Niklop1989/skillbox.git
+git branch -M main
+git push -u origin main
+git remote add origin https://github.com/Niklop1989/skillbox.git
+git branch -M main
+git push -u origin main
+git init
+git remote add origin https://github.com/Niklop1989/skillbox.git
+git branch -M main
+git push -u origin main
+echo "# skillbox" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Niklop1989/skillbox.git
+git push -u origin main
+git status
+git add .
+git commit -m 'new'
+git push
+touch .gitignore
+GIT STATUS
+git status
+git add .gitignore
+git commit -m 'gitignore'
+git status
+git add .
+git commit -m 'dsd'
+git push
+git status
+! git status
+git add .
+git commit -m 'dfdfd'
+git status
+git branch -a
+git remote remove origin main
+git status
+git checkout -b new
+git branch
+cd skillbox
+clear
+git status
+git init
+git status
+ls -la
+clear
+git status
+CLEAR
+clear
+git status
+mkdir errors.log
+git status
+clear
+git status
+git add .
+git commit -m 'dff'
+git status
+git log
+git show 6aa66a
+clear
+git remote add origin https://github.com/Niklop1989/nikita.git
+echo "# nikita" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Niklop1989/nikita.git
+git push -u origin main
+clear
+git push
+git add .
+git commit -m 'sdsds'
+git push
+git status
+git add .
+git commit -m 'sdsd'
+git push
+git remote add origin https://github.com/Niklop1989/nikita.git
+git push -u https://github.com/Niklop1989/nikita.git
+echo "# newrep" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Niklop1989/newrep.git
+git push -u origin main
+echo "# newrep" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Niklop1989/newrep.git
+git push -u origin newrep
+clear
+echo "# newrep" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Niklop1989/newrep.git
+git push -u origin main
+git remote add origin https://github.com/Niklop1989/newrep.git
+git push -u origin main
+git remote add origin https://github.com/Niklop1989/newrep.git
+git push 
+git remote add origin https://github.com/Niklop1989/newrep.git
+git push -u https://github.com/Niklop1989/newrep.git
+echo "# home" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Niklop1989/home.git
+git push -u origin main
+git clone https://github.com/Niklop1989/home.git
+cd
+git clone https://github.com/Niklop1989/home.git
+cd Desktop
+cd skillbox
+cd home
+git clone https://github.com/Niklop1989/home.git
+cd
+cd skillbox
+git clone https://github.com/Niklop1989/skillbox.git
+clear
+cd 
+git clone https://github.com/Niklop1989/skillbox.git
+git status
+git branch
+git status
+git add .
+git commit -m 'dfdfd'
+git push
+git remote set-url https://github.com/Niklop1989/nikita.git
+git remote se- url origin https://github.com/Niklop1989/nikita.git
+git remote se- url origin nikita
+git remote set-url origin nikita
+git push
+git remote set-url origin https://github.com/Niklop1989/nikita.git
+git push
+git status
+git add /
+git commit -m 'dsd'
+git status
+git commit -m 'dsd'
+git add .
+git commit -m 'dsd'
+git status
+git pull 
+git pull https://github.com/Niklop1989/nikita.git
+git push
+clear
+git pull
+git remote set-url origin https://github.com/Niklop1989/nikita.git
+git pull
+clear
+git remote set-url origin https://github.com/Niklop1989/home.git
+git pull
+cd
+cd home
+git remote set-url origin https://github.com/Niklop1989/home.git
+git pull
+clear
+git clone https://github.com/Niklop1989/home.git
+git pull
+git branch
+git remote set-url origin https://github.com/Niklop1989/home.git
+git push
+clear
+git remote set-url origin https://github.com/Niklop1989/home.git
+git clone https://github.com/Niklop1989/home.git
+git pull
+cd
+git clone https://github.com/Niklop1989/home.git
+git pull
+clear
+git remote set-url origin https://github.com/Niklop1989/nikita.git
+git pull
+git remote add origin https://github.com/Niklop1989/nikita.git
+git branch
+git add .
+clear
+cd skillbox
+git status
+git pull
+clear
+git remote add origin https://github.com/Niklop1989/nikita.git
+git remote set-url origin https://github.com/Niklop1989/nikita.git
+git pull
+clear
+git pull
+git remote set-url origin https://github.com/Niklop1989/skillbox.git
+git pull
+git remote add origin https://github.com/Niklop1989/skillbox.git
+git push
+clear
+git push -u origin https://github.com/Niklop1989/skillbox.git
+git status
+git log
+clear
+git push
+git remote add origin https://github.com/Niklop1989/skillbox.git
+git push -u origin https://github.com/Niklop1989/skillbox.git
+git remote add orogin https://github.com/Niklop1989/skillbox.git
+git pull
+git pull remote https://github.com/Niklop1989/skillbox.git
+git clone https://github.com/Niklop1989/skillbox.git
+git push -u origin main https://github.com/Niklop1989/skillbox.git
+git add .
+git commit -m 'fdfdf'
+git push
+git pull
+git status
+clear
+git checkout -b basket1
+git branch
+git log
+clear
+git status
+git add .
+git commit -m 'dfdfdf'
+git push -u origin basket1
+git pull
+git branch
+git pull origin basket2
+git branck
+git branch
+git pull
+git branch
+git remove -v
+git remov -v
+git remot -v
+git remote -v
+git pull
+git branch
+git pull
+git branch
+git clone https://github.com/Niklop1989/skillbox.git
+git branch
+git pull
+git branch
+git pull
+git branch
+git remote -v
+git checkout basket1
+git branch
+gti checkout main
+git checkout main
+git status
+git add .
+git commit -m 'basket1'
+git push
+git pull
+clear
+git status
+git stash
+git status
+git push
+git pop
+git stash pop
+git add .
+git commit -m 'fdfd'
+git push 
+git stash list
+git branch
+git add .
+git commit -m 'dffd'
+git checkout basket1
+git checkout main
+git status
+git add .
+git commit -m 'dfd'
+git checkout basket1
+git status
+git add .
+git commit -m 'dfdfd'
+git merge main
+git add .
+git commit -m 'df'
+git add .
+git commit -m 'fdfd'
+git add .
+git commit -m 'dfdf'
+git diff
+git log
+git diff 69cece 6301e
+clear
+git restore README.md
+GIT ADD .
+git add .
+git commit -m 'restore'
+git restore --stages README.md
+clear
+git status
+git add .
+git restore --staged README.md
+git status
+git clean -f
+git rm -cached loplop
+git rm --cached loplop
+git log
+git revrt af3222
+git revert af3222
+git reset --hard af3222
+git branch
+git checkout basket1
+git merge main
+gigit reset --merge main
+git reset --merge main
+git merge main
+git reset --merge main
+git merge --abort
+git branch
+git branch -d basket1
+git branch -d main
+git branch
+git checkout main
+git branch
+git branch -d basket1
+git branch -D basket1
+git clone https://gitlab.skillbox.ru/nikita_lopantsev/python_advanced.git
+mkdir python
+cd python
+git clone https://gitlab.skillbox.ru/nikita_lopantsev/python_advanced.git
+git branch
+git status
+git stash
+git branck
+git branch
+git stash pop
+git stash
+git checkout master
+git branch
+git stash pop
+git add .
+git commit -m 'done homework'
+git push -u https://gitlab.skillbox.ru/nikita_lopantsev/python_advanced.git
+git status
+git branch
+git checkout trening
+clear
+git checkout master
+git checkout trening
+git checkout master
+git branch
+cd python
+git clone https://gitlab.skillbox.ru/nikita_lopantsev/python_advanced.git
+git clone https://gitlab.skillbox.ru/nikita_lopantsev/python_advanced2.git
+git clone https://gitlab.skillbox.ru/nikita_lopantsev/python_advanced.git
+cd
+cd python2
+git clone https://gitlab.skillbox.ru/nikita_lopantsev/python_advanced.git
+git branch
+cd
+cd ..
+main.py
+cd module_12_multitasking_2
+cd homework
+cd hw3
+main.py
+python main.py
+clear
+cd
+cd /python2/python_advanced/module_12_multitasking_2/homework
+cd python2/python_advanced/module_12_multitasking_2/homework
+cd hw3
+cd
+cd /python2/python_advanced/module_12_multitasking_2/homework/hw2
+cd python2/python_advanced/module_12_multitasking_2/homework/hw2
+main.py
+python main.py
+git push 
+git add .
+git commit -m 'done'
+git push
+cd module_12_multitasking_2
+cd homework
+cd hw3
+python new_main.py
+cd python2
+git clone https://gitlab.skillbox.ru/nikita_lopantsev/python_advanced13.git
+git clone https://gitlab.skillbox.ru/nikita_lopantsev/python_advanced.git
+sudo apt instll sqlite3
+cd
+sudo apt install sqlite3
+sudo apt install sqlitebrowser
+generate_practice_database.py
+git add.
+git add .
+git commit-m done
+git commit -m done
+git push
+git clone https://gitlab.skillbox.ru/nikita_lopantsev/python_advanced.git
+lsof -i
+kill -9 5000
+kill -9 :5000
+kill -9 3815
+lsof -i
+lsof -i 5000
+lsof -i :5000
+lsof -i 
+git clone https://gitlab.skillbox.ru/nikita_lopantsev/python_advanced.git
+http GET http://127.0.0.1:5000/room
+http POST http://127.0.0.1:5000:/room
+http POST http://127.0.0.1:5000/room
+http POST http://127.0.0.1:5000/add-room
+http POST http://127.0.0.1:5000/add-room beds=9 floor=8 guestNum=7 price=444
+http POST http://127.0.0.1:5000/booking roomId=14
+http POST http://127.0.0.1:5000/booking roomId=1
+http POST http://127.0.0.1:5000/room
+http POST http://127.0.0.1:5000/add-room
+http POST http://127.0.0.1:5000/rooms
+http POST http://127.0.0.1:5000/add-room
+git add .
+git clone -m 'done'
+clear
+git add .
+git commit -m 'done'
+git status
+git pull
+git add .
+git commit -m 'done'
+git push
+git add .
+git commit -m 'improve homework'
+git status
+git pull
+git push
+git clone https://gitlab.skillbox.ru/nikita_lopantsev/python_advanced.git
+clear
+git clone
+clear
+git clone https://gitlab.skillbox.ru/nikita_lopantsev/python_advanced.git
+git clone https://gitlab.skillbox.ru/nikita_lopantsev/module_16.git
+git push
+git pull
+git push
+git pull
+git status
+lear
+clear
+git add .
+git commit -m 'done'
+git push
+ssh -i timeweb root@62.113.41.235
+ssh -i timeweb user@62.113.41.235
+ssh -i timeweb root@62.113.41.235
+ыыр -М
+ssh -V
+ssh-keygen -t rsa -b 2048 -C "TimeWeb" -f timeweb
+ls *
+cat timeweb.pub
+ssh -i timeweb root@62.113.41.235
+chmod 600 /home/nikita/python/module_16/timeweb_server
+ssh-i /home/nikita/python/module_16/timeweb_server -p 2022 root@62.113.41.235
+ssh -i /home/nikita/python/module_16/timeweb_server -p 2022 root@62.113.41.235
+chmod 600 /home/nikita/python/module_16/timeweb_server
+chmod 600 /home/nikita/python/module_16/timeweb-server
+ssh -i /home/nikita/python/module_16/timeweb-server -p 2022 root@62.113.41.235
+ssh -i timeweb user@62.113.41.235
+ssh -i timeweb root@62.113.41.235
+ssh -i timeweb user@62.113.41.235
+scp timeweb /home/nikita/python/module_16/python_advanced/module_08_deploy/materials/new_year_application/templates/index.html user@62.113.41.235:/home/user/workspace/index.html
+scp -i timeweb /home/nikita/python/module_16/python_advanced/module_08_deploy/materials/new_year_application/templates/index.html user@62.113.41.235:/home/user/workspace/index.html
+ssh -i timeweb root@62.113.41.235
+ssh -i timeweb user@62.113.41.235
+scp -i timeweb /home/nikita/python/module_16/python_advanced/module_08_deploy/materials/new_year_application/templates/index.html user@62.113.41.235:/home/user/workspace/new_year_aplication/templates/index.html
+scp -i timeweb -r /home/nikita/python/module_16/python_advanced/module_08_deploy/materials/new_year_application/templates/css user@62.113.41.235:/home/user/workspace/new_year_aplication/templates/css
+sudo apt install rsync
+rsync -e "ssh -i timeweb" -Praz /home/nikita/python/module_16/python_advanced/module_08_deploy/materials/new_year_application/templates user@62.113.41.235:/home/user/workspace/new_year_aplication/templates
+ssh -i timeweb user@62.113.41.235
+scp -i timeweb -r /home/nikita/python/module_16/python_advanced/module_08_deploy/materials/new_year_application/templates/js user@62.113.41.235:/home/user/workspace/new_year_aplication/templates/js
+scp -i timeweb -r /home/nikita/python/module_16/python_advanced/module_08_deploy/materials/new_year_application/templates/images user@62.113.41.235:/home/user/workspace/new_year_aplication/templates/images
+ssh -i timeweb user@62.113.41.235
+sudo docker build -t app.py
+sudo docker build -t test_app
+sudo docker build -t test_app .
+sudo docker run test_app python /home/nikita/python/module_16/python_advanced/module_09_docker/materials/test_application/app.py
+sudo docker run test_app python app/app.py
+sudo docker build -t test.app
+for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
+# Add Docker's official GPG key:
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+# Add the repository to Apt sources:
+echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo docker run hello-world
+sudo service docker start
+sudo docker run hello-world
+sudo groupadd docker
+sudo usermod -aG docker $USER
+logout
+docker run hello-world
+sudo docker run hello-world
+sudo docker run debian echo "hello world"
+sudo docker run ubuntu echo "hi"
+sudo docker run --it ubuntu bash
+sudo docker run -it ubuntu bash
+sudo docker ps
+sudo docker ps -a
+sudo apt-get update
+sudo apt-get install docker-compose-plugin
+docker compose version
+docker -V
+docker -v
+docker version
+clear
+docker run hello-world
+clear
+docker images
+docker run new_year
+clear
+docker ps
+docker ps -a
+docker rm 35dbd29328d3
+docker ps -a
+docker rm 91b5595e6960 
+docker ps -a
+clear
+docker container prune
+docker ps -a
+clear
+docker run hello-world
+clear
+docker ps -a
+docker ps -aq
+docker rm $(docker ps -aq)
+docker ps -a
+docker run --rm hello-world
+clear
+docker ps -a
+clear
+docker run --name hi hello-world
+docker ps -a
+clear
+docker rm hi
+docker ps -a
+clear
+docker ps -a
+docker run --name hi hello-world
+clear
+docker ps -a
+docker start hi
+docker rm hi
+clear
+docker images
+docker rmi debian:latest
+docker images
+docker rmi ubuntu:latest
+clear
+docker images
+docker pull ubuntu
+docker images
+docker rmi prune
+docker images prune
+docker rmi new_year:latest
+docker rmi test_app
+docker rmi hello-world
+docker rmi andreyshulaev/test_app:latest
+docker rmi 662ace98cb64
+clear
+docker images
+docker rmi 387968cb6dac
+docker rmi 4b3a2463740d
+docker rmi ubuntu:latest
+clea
+clear
+docker pull ubuntu
+docker images
+clear
+docker pull alpine
+docker images
+docker run ubuntu
+docker ps
+docker ps -a
+docker run -i -t ubuntu
+docker ps -a
+docker run -i -t ubuntu
+docker ps -a
+docker start bc5bddcb320a
+ls
+docker start -i bc5bddcb320a
+docker container prum
+docker container prune
+clear
+docker run -it --name myos ubuntu
+clear
+docker stats
+docker build . -t myubuntu:1.0.0
+docker images
+clear
+docker build . -t
+docker build . -t myubuntu:1.0.0
+clear
+docker images
+docker run -it --name myos myubuntu:1.0.0
+docker rm myos
+docker run -i --name myos myubuntu:1.0.0
+docker run -it --name myos myubuntu:1.0.0
+docker rm myos
+docker run -it --name myos myubuntu:1.0.0
+clear
+docker ps -a
+docker rm myos
+docker images
+docker rmi myubuntu:1.0.0
+dicker images
+docker images
+docker build . -t
+clear
+docker images
+docker rmi ubuntu
+docker images
+docker build . -t
+docker build . -t myubuntu:2.0.0
+images
+docker images
+docker rmi myubuntu:2.0.0
+docker images
+clear
+docker build . -t
+docker build . -t myubuntu:1.0.0
+docker images
+docker build . -t myubuntu:2.0.0
+docker images
+docker rmi alpine
+docker rmi myubuntu:1.0.0
+docker ps -a
+docker images
+docker build . -t myubuntu:2.0.0
+clear
+docker image
+docker images
+docker run -it --name container ubuntu
+docker images
+docker run container
+docker start container
+docker container prune
+docker run -it --name container ubuntu
+docker run -it --name container1 ubuntu
+docker rm container
+docker ps -a
+docker rm container
+docker container prune
+docker ps -a
+docker start container
+docker run container
+docker start ubuntu
+docker run ubuntu
+clear
+docker stop container
+docker ps -a
+docker container prune
+docker ps -a
+docker run -it --name container1 ubuntu
+docker start -i container2
+docker start -i container1
+app.py
+echo app.py
+clear
+python app.py
+python3 app.py
+clear
+docker build . -t
+docker build . -t myapp:1.0.0
+docker images
+clear
+docker run -it --name myappcontainer myapp
+docker run -it --name myappcontainer myapp:1.0.0
+docker images
+docker rmi myapp
+docker rmi myapp:1.0.0
+docker stop myappcontainer
+docker rmi myapp:1.0.0
+docker rmi myapp
+docker rmi myapp:1.0.0
+docker ps -a
+docker rm myappcontainer
+docker rmi myapp:1.0.0
+clear
+docker build . -t myapp:1.0
+docker images
+docker run -it --name app myapp:1.0
+docker run -it --name app myapp:1.0clear
+clear
+docker log app
+docker log myapp
+docker images
+docker build -t myapp .
+docker images
+docker run --name app2 myapp
+clear
+docker system prune
+clear
+docker system prune -a
+docker images
+clear
+docker builder prune
+docker builder prune -a
+docker build -t myapp4 .
+docker images
+docker run --name container4 myapp4
+docker run -it --name server nginx
+docker run -d --name server nginx
+docker run -d --name server2 nginx
+docker images
+docker ps -a
+docker rm myapp4
+docker rm container4
+docker rm container2
+docker rm container1
+docker ps -a
+docker ps
+docker stop server
+docker stop server2
+docker rm server2
+docker rm server
+docker ps
+docker ps -a
+clear
+docker build -t nginx .
+docker image
+
+docker rmi myapp4
+docker images
+docker build -t myapp1
+docker build -t myapp4 .
+docker images
+docker run -it name server nginx
+docker run -it --name server1 nginx
+docker run -d --name server1 nginx
+docker run -d --name server2 nginx
+docker logs
+docker logs server2
+docker ps
+docker stop server2
+docker rm  server2
+docker ps -a
+docker run -d -p 8000:80 --name server nginx
+docker ps
+docker stop server
+docker rm server
+docker run -d -p 127.122.22.111:8000:80 --name server nginx
+docker container inspect server
+clear
+docker container inspect server | IPadres
+docker container inspect server
+docker container inspect server | Ports
+docker container inspect server | grep Ports
+docker container inspect server | grep HostIp
+docker ps
+docker exec -it server bash
+docker exec -it server sh
+docker exec -it server bash
+clear
+docker exec -it server bash
+clear
+docker exec -it server
+docker exec -it server bash
+nano
+docker exec -it server bash
+clear
+docker ps
+docker stop server
+docker rm server
+docker images
+docker run -d -p 127.111.0.0:8000:80 --name server nginx
+docker exec -it server bash
+docker images
+docker ps 
+docker stop container1
+docker stop container2
+docker rmi myapp
+docker rmi myapp4
+docker rmi myapp4:latest
+clear
+docker system prune -a
+docker images
+docker ps -a
+clear
+docker network ls
+docker network creae mynetwork
+docker network create mynetwork
+docker network ls
+clear
+docker network ls
+docker run --mymongo --network mynetwork -d mongo
+docker run --name mymongo --network mynetwork -d mongo
+docker images
+docker ps
+clear
+docker run --name dbbrowser --network mynetwork -e ME_CONFIG_MONGODB_SERVER=mymongo -p 8081:8081 -d mongo-express
+pip install pymongo
+sudo apt install pymongo
+docker build -t app:1.0.0
+sudo docker build -t app:1.0.0
+sudo docker build -t app:1.0.0 .
+docker images
+docker ps 
+docker run -it -p 5000:8081 --name nikita app:1.0.0
+docker run -p 5000:5050 --name nikita app:1.0.0
+docker ps
+docker ps -a
+docker stop nikita
+docker rm nikita
+docker run -p 5050:5000 --name nikita app:1.0.0
+docker run -p5050:5000 --name nikita app:1.0.0
+docker stop nikita
+docker rm nikita
+docker run -p5050:5000 --name nikita app:1.0.0
+docker run hello-world
+sudo odcker run hello-world
+sudo docker run hello-world
+clear
+docker diff
+docker ps -a
+docker diff mymongo
+docker logs mymongo
+clear
+curl http://0.0.0.0/hello/nik
+curl http://0.0.0.0:5000/hello/nik
+curl https://0.0.0.0:5050/hello/nik
+curl https://127.0.0.1:5050/hello/nik
+curl http://127.0.0.1:5050/hello/nik
+curl http://0.0.0.0:5050/hello/nik
+curl http://0.0.0.0:5000/hello/nik
+docker build -t app:1.0.0 .
+docker images
+docker login
+docker tag app:1.0.0 andreyshulaev1/test_app
+docker push andreyshulaev1/test_app
+docker pull andreyshulaev/tst_app
+docker pull andreyshulaev1/tst_app
+docker pull andreyshulaev1/test_app
+docker run -it --name nik -p5000:5000 andreyshulaev1/test_app
+clear
+docker ps -a
+docker stop niki
+docker rm niki
+docker ps -a
+docker images
+docker system prune
+docker ps -a
+docker build -t app:1.0.0 .
+docker run -p5050:5000 app:1.0.0
+docker system prune 
+docker build -t app:1.0.0 .
+docker run -p 5000:5000 app:1.0.0
+docker system prune 
+docker build -t app:1.0.0 .
+docker run -p 5050:5000 app:1.0.0
+docker system prune 
+docker run -p 5050:5000 app:1.0.0
+docker system prune 
+docker run -p 5050:5000 app:1.0.0
+docker build -t app:1.0.0 .
+docker run -p 5050:5000 app:1.0.0
+clear
+docker ps -a
+docker system prune 
+docker ps -a
+clear
+docker build -t app:1.0.0 .
+docker run --name nikita -p 5050:5000 app:1.0.0
+clear
+docker system prune 
+docker run --name nikita -p 5051:5000 app:1.0.0
+clear
+docker system prune 
+docker build -t app:1.0.0 .
+docker run --name nikita -p 5050:5000 app:1.0.0
+clear
+docker system prune 
+docker run -h 0.0.0.0 --name nikita -p 5050:5000 app:1.0.0
+clear
+docker system prune 
+docker build -t app:1.0.0 .
+docker run -h 0.0.0.0 --name nikita -p 5050:5000 app:1.0.0
+docker system prune 
+clear
+docker build -t app:1.0.0 .
+docker run --name nikita -p 5050:5000 app:1.0.0
+clear
+docker build -t app:1.0.0 .
+docker run --name nikita -p 5050:5000 app:1.0.0
+docker ps -a
+docker rm nikita
+docker run --name nikita -p 5050:5000 app:1.0.0
+clear
+docker build -t app:1.0.0 .
+docker run -p 5050:5000 app:1.0.0
+clear
+docker system prune 
+docker build -t app:1.0.0 .
+docker run -p 5050:5000 app:1.0.0
+clear
+docker system prune 
+docker build -t app:1.0.0 .
+docker run -p 5050:5000 app:1.0.0
+clear
+docker system prune 
+docker run -p 5050:5000 app:1.0.0
+docker system prune 
+clear
+docker run -p 5050:5000 app:1.0.0
+clear
+docker system prune 
+docker run app:1.0.0
+cler
+clear
+docker system prune 
+docker run -h 0.0.0.0 -p 5050:5000 app:1.0.0
+clear
+docker system prune 
+cleaar
+clear
+docker build -t app:1.0.0 .
+docker images
+docker run -p5050:5000 app:1.0.0
+docker system prune 
+docker build -t app:1.0.0 .
+docker run -p5050:5000 app:1.0.0
+clear
+docker system prune 
+docker build -t app:1.0.0 .
+docker run -p5050:5000 app:1.0.0
+docker system prune 
+docker run --name nikita -p5050:5000 app:1.0.0
+docker system prune 
+docker build -t app:1.0.0 .
+docker run --name nikita -p5050:5000 app:1.0.0
+clear
+docker system prune 
+docker build -t app:1.0.0 .
+docker run --name nikita -p5050:5000 app:1.0.0
+clear
+docker system prune 
+clear
+docker ps -a
+clear
+ssh -i timeweb root@62.113.41.235
+ssh -i timeweb root@62.113.41.235
+cat timweb
+cat timeweb
+clear
+ssh -i timeweb root@62.113.41.235
+docker tag app:1.0.0.0 andreyshulaev1/test_app
+docker login
+docker build -t app:1.0.0 andreyshulaev1/test_app
+docker build -t app:1.0.0 andreyshulaev1/test_app .
+clear
+ssh -i timeweb user@62.113.41.235

@@ -1,0 +1,182 @@
+{
+  "appInfo" : {
+    "build" : "243.26053.29",
+    "buildDate" : "2025-03-17T21:38:00Z[UTC]",
+    "productCode" : "PC",
+    "generated" : "2025-04-13T09:56:08.30335806Z",
+    "os" : "Linux 6.11.0-19-generic",
+    "runtime" : "JetBrains s.r.o. 21.0.6 21.0.6+8-b631.39"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 2147483648,
+    "numberOfProcessors" : 8,
+    "maxNumberOfIndexingThreads" : 7,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "type" : "DumbIndexing",
+  "projectIndexingActivityHistory" : {
+    "projectName" : "python_advanced",
+    "times" : {
+      "scanningIds" : [ ],
+      "contentLoadingVisibleTime" : 38746457,
+      "retrievingChangedDuringIndexingFilesTime" : 3206923,
+      "separateApplyingIndexesVisibleTime" : 105480982,
+      "updatingStart" : "2025-04-13T09:56:06.01518799Z",
+      "updatingEnd" : "2025-04-13T09:56:08.302048661Z",
+      "totalWallTimeWithPauses" : 2286860671,
+      "wallTimeOnPause" : 0,
+      "wasInterrupted" : false,
+      "dumbModeStart" : "2025-04-13T09:56:06.01518799Z",
+      "dumbWallTimeWithPauses" : 2286860671,
+      "dumbWallTimeWithoutPauses" : 2286860671,
+      "totalWallTimeWithoutPauses" : 2286860671
+    },
+    "fileCount" : {
+      "numberOfChangedDuringIndexingFiles" : 73,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringIndexingStage" : 1,
+      "numberOfFilesIndexedWithLoadingContent" : 73,
+      "numberOfNothingToWriteFiles" : 0
+    },
+    "totalStatsPerFileType" : [ {
+      "fileType" : "Python",
+      "partOfTotalProcessingTime" : {
+        "part" : 13266136376,
+        "total" : 13266136376
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 232485190,
+        "total" : 232485190
+      },
+      "totalNumberOfFiles" : 73,
+      "totalFilesSize" : 861939,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 861939,
+        "totalCpuTime" : 13266136376
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Refreshed files",
+        "numberOfFiles" : 73,
+        "totalFilesSize" : 861939,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 13266136376,
+          "total" : 13266136376
+        }
+      } ]
+    } ],
+    "totalStatsPerBaseLanguage" : [ {
+      "language" : "Python",
+      "partOfTotalProcessingTime" : {
+        "part" : 13266136376,
+        "total" : 13266136376
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 464970380,
+        "total" : 232485190
+      },
+      "totalNumberOfFiles" : 73,
+      "totalFilesSize" : 861939,
+      "totalProcessingSpeed" : {
+        "totalBytes" : 861939,
+        "totalCpuTime" : 13266136376
+      }
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "Stubs",
+      "partOfTotalIndexingTime" : {
+        "part" : 6701951723,
+        "total" : 7442352273
+      },
+      "totalNumberOfFiles" : 73,
+      "totalNumberOfFilesIndexedByExtensions" : 1,
+      "totalFilesSize" : 861939,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 861939,
+        "totalCpuTime" : 6701951723
+      }
+    }, {
+      "indexId" : "IdIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 540469402,
+        "total" : 7442352273
+      },
+      "totalNumberOfFiles" : 73,
+      "totalNumberOfFilesIndexedByExtensions" : 1,
+      "totalFilesSize" : 861939,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 861939,
+        "totalCpuTime" : 540469402
+      }
+    }, {
+      "indexId" : "Trigram.Index",
+      "partOfTotalIndexingTime" : {
+        "part" : 199931148,
+        "total" : 7442352273
+      },
+      "totalNumberOfFiles" : 73,
+      "totalNumberOfFilesIndexedByExtensions" : 1,
+      "totalFilesSize" : 861939,
+      "indexValueChangerEvaluationSpeed" : {
+        "totalBytes" : 861939,
+        "totalCpuTime" : 199931148
+      }
+    } ],
+    "statisticsOfChangedDuringIndexingFiles" : {
+      "numberOfFiles" : 73,
+      "retrievingTime" : 3206923
+    },
+    "fileProviderStatistics" : [ {
+      "providerName" : "Refreshed files",
+      "totalNumberOfIndexedFiles" : 73,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 1,
+      "totalNumberOfNothingToWriteFiles" : 0,
+      "totalIndexingVisibleTime" : 2210961457,
+      "contentLoadingVisibleTime" : 38746457,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ {
+        "fileName" : "utils.py",
+        "processingTime" : 583046206,
+        "evaluationOfIndexValueChangerTime" : 98753677,
+        "contentLoadingTime" : 1207137
+      }, {
+        "fileName" : "markers.py",
+        "processingTime" : 775221415,
+        "evaluationOfIndexValueChangerTime" : 181114677,
+        "contentLoadingTime" : 1861697
+      }, {
+        "fileName" : "_musllinux.py",
+        "processingTime" : 585630346,
+        "evaluationOfIndexValueChangerTime" : 504077515,
+        "contentLoadingTime" : 1482003
+      }, {
+        "fileName" : "metadata.py",
+        "processingTime" : 862823178,
+        "evaluationOfIndexValueChangerTime" : 357837065,
+        "contentLoadingTime" : 8644385
+      }, {
+        "fileName" : "_parser.py",
+        "processingTime" : 935564520,
+        "evaluationOfIndexValueChangerTime" : 159729074,
+        "contentLoadingTime" : 2945522
+      }, {
+        "fileName" : "version.py",
+        "processingTime" : 622328358,
+        "evaluationOfIndexValueChangerTime" : 190846695,
+        "contentLoadingTime" : 3585153
+      }, {
+        "fileName" : "_elffile.py",
+        "processingTime" : 1270692835,
+        "evaluationOfIndexValueChangerTime" : 233515740,
+        "contentLoadingTime" : 17299480
+      }, {
+        "fileName" : "requirements.py",
+        "processingTime" : 1122445897,
+        "evaluationOfIndexValueChangerTime" : 81038006,
+        "contentLoadingTime" : 19146618
+      } ],
+      "filesFullyIndexedByExtensions" : [ ],
+      "separateApplyingIndexesVisibleTime" : 105480982
+    } ],
+    "visibleTimeToAllThreadTimeRatio" : 0.16666204796446155
+  }
+}

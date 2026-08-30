@@ -1,0 +1,65 @@
+{
+  "appInfo" : {
+    "build" : "243.25659.43",
+    "buildDate" : "2025-02-27T08:08:00Z[UTC]",
+    "productCode" : "PC",
+    "generated" : "2025-03-09T07:48:19.637487018Z",
+    "os" : "Linux 6.8.0-52-generic",
+    "runtime" : "JetBrains s.r.o. 21.0.6 21.0.6+8-b631.39"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 2147483648,
+    "numberOfProcessors" : 8,
+    "maxNumberOfIndexingThreads" : 7,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "type" : "Scanning",
+  "projectIndexingActivityHistory" : {
+    "projectName" : "docker-course-demo-main",
+    "times" : {
+      "scanningReason" : "Merged changes in: \"Python SDK Python 3.12 /usr/bin/python3.12\" with changes in: \"Python SDK Python 3.12 /usr/bin/python3.12\"",
+      "scanningType" : "PARTIAL",
+      "scanningId" : 2,
+      "creatingIteratorsTime" : 0,
+      "concurrentHandlingWallTimeWithoutPauses" : 0,
+      "concurrentHandlingWallTimeWithPauses" : 0,
+      "concurrentHandlingSumOfThreadTimesWithPauses" : 1601497949,
+      "concurrentIterationAndScannersApplicationSumOfThreadTimesWithPauses" : 101950747,
+      "concurrentFileCheckSumOfThreadTimesWithPauses" : 1499320095,
+      "delayedPushPropertiesStageTime" : 0,
+      "indexExtensionsTime" : 12320007,
+      "dumbModeStart" : "2025-03-09T07:48:18.523262051Z",
+      "dumbWallTimeWithPauses" : 1112079719,
+      "dumbWallTimeWithoutPauses" : 1112079719,
+      "updatingStart" : "2025-03-09T07:48:17.918205739Z",
+      "updatingEnd" : "2025-03-09T07:48:19.63534177Z",
+      "totalWallTimeWithPauses" : 1717136031,
+      "wallTimeOnPause" : 2055378,
+      "wasInterrupted" : false,
+      "totalWallTimeWithoutPauses" : 1715080653
+    },
+    "fileCount" : {
+      "numberOfFileProviders" : 1,
+      "numberOfScannedFiles" : 9860,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringScan" : 0,
+      "numberOfFilesScheduledForIndexingAfterScan" : 236
+    },
+    "scanningStatistics" : [ {
+      "providerName" : "Python SDK Python 3.12 /usr/bin/python3.12",
+      "numberOfScannedFiles" : 9860,
+      "numberOfSkippedFiles" : 1,
+      "numberOfFilesForIndexing" : 236,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 1342473239,
+      "totalOneThreadTimeWithPauses" : 1601497949,
+      "iterationAndScannersApplicationTime" : 101950747,
+      "filesCheckTime" : 1499320095,
+      "timeProcessingUpToDateFiles" : 470364127,
+      "timeUpdatingContentLessIndexes" : 9915328,
+      "timeIndexingWithoutContentViaInfrastructureExtension" : 12320007,
+      "roots" : [ ]
+    } ]
+  }
+}

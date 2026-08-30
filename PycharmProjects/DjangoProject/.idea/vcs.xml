@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/python_django" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/python_django/django-app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/python_django/prod" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/python_django/prod/mysite" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/python_django/shopapp" vcs="Git" />
   </component>
