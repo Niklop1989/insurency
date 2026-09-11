@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оформление полиса: {{ insurance.title }}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'shopapp/css/insurence_by.css' %}" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <a href="{% url 'insurance_list' %}" class="logo">ГлавсСтрах</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="checkout-box">
+        <h1 class="checkout-title">Проверка данных полиса</h1>
+        <p style="margin-bottom: 20px; color: var(--gray-text)">
+          Пожалуйста, проверьте условия страхования перед подтверждением и
+          оплатой.
+        </p>
+
+        <div class="policy-details">
+          <div class="detail-row">
+            <span class="detail-label">Продукт:</span>
+            <span class="detail-value">{{ insurance.title }}</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Категория:</span>
+            <span class="detail-value"
+              >{{ insurance.get_category_display }}</span
+            >
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Срок действия:</span>
+            <span class="detail-value">1 год (365 дней)</span>
+          </div>
+          <div
+            class="detail-row"
+            style="
+              margin-top: 10px;
+              padding-top: 15px;
+              border-top: 2px dashed #cbd5e1;
+            "
+          >
+            <span class="detail-label total-price">Итого к оплате:</span>
+            <span class="detail-value total-price"
+              >{{ insurance.price }} ₽</span
+            >
+          </div>
+        </div>
+
+        <!-- Форма отправляет POST запрос для безопасного создания полиса в БД -->
+        <form method="post" action="">
+          {% csrf_csrf_token %}
+          <div class="actions-block">
+            <a href="{% url 'insurance_list' %}" class="btn btn-cancel"
+              >Отмена</a
+            >
+            <button type="submit" class="btn btn-secondary">
+              Подтвердить и оплатить
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 ГлавсСтрах. Безопасная оплата онлайн.</p>
+      </div>
+    </footer>
+  </body>
+</html>

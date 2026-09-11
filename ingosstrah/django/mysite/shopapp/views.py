@@ -43,9 +43,9 @@ class InsuranceListView(ListView):
 class ProfilePoliciesListView(LoginRequiredMixin, ListView):
     """Личный кабинет: список полисов пользователя и проверка дедлайнов"""
     model = UserPolicy
-    template_name = 'profile_policies.html'
+    template_name = 'shopapp/profile_policies.html'
     context_object_name = 'policies'
-    login_url = reverse_lazy('login') 
+    #login_url = reverse_lazy('login') 
 
     def get_queryset(self):
         queryset = UserPolicy.objects.filter(user=self.request.user).order_by('end_date')
@@ -60,15 +60,19 @@ class ProfilePoliciesListView(LoginRequiredMixin, ListView):
         return queryset
 
 
-class BuyInsuranceView(LoginRequiredMixin, RedirectView):
-    """Процесс оформления полиса в БД и редирект в личный кабинет"""
-    permanent = False
-    query_string = True
-    pattern_name = 'profile_policies'
+from django.views.generic import DetailView
 
-    def get_redirect_url(self, *args, **kwargs):
-        insurance_id = kwargs.get('insurance_id')
-        insurance = get_object_or_404(Insurance, id=insurance_id)
+class BuyInsuranceView(LoginRequiredMixin, DetailView):
+    """Страница подтверждения покупки (GET) и создание полиса (POST)"""
+    model = Insurance
+    template_name = 'insurance_confirm_buy.html'
+    context_object_name = 'insurance'
+    pk_url_kwarg = 'insurance_id'
+    #login_url = reverse_lazy('myauth:login')
+
+    def post(self, request, *args, **kwargs):
+        # Метод срабатывает при нажатии кнопки "Подтвердить и оплатить"
+        insurance = self.get_object()
         
         start = timezone.now().date()
         end = start + timedelta(days=365)
@@ -86,4 +90,4 @@ class BuyInsuranceView(LoginRequiredMixin, RedirectView):
             self.request, 
             f"Полис {new_policy.policy_number} успешно оформлен! Срок действия до {end.strftime('%d.%m.%Y')}."
         )
-        return super().get_redirect_url(*args, **kwargs)
+        return redirect('shopapp:profile_policies')

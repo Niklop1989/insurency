@@ -14,9 +14,9 @@
   <body>
     <header class="navbar">
       <div class="container">
-        <a href="{% url 'insurance_list' %}" class="logo">ГлавсСтрах</a>
+        <a href="{% url 'shopapp:insurance_list' %}" class="logo">ГлавсСтрах</a>
         <nav class="nav-links">
-          <a href="{% url 'insurance_list' %}">Каталог</a>
+          <a href="{% url 'shopapp:insurance_list' %}">Каталог</a>
           <a href="#" class="active">Мои полисы</a>
         </nav>
       </div>
@@ -71,7 +71,9 @@
       <div class="no-data" style="margin-top: 20px">
         <p>
           У вас пока нет оформленных страховок.
-          <a href="{% url 'insurance_list' %}" style="color: var(--accent-blue)"
+          <a
+            href="{% url 'shopapp:insurance_list' %}"
+            style="color: var(--accent-blue)"
             >Перейти в каталог</a
           >
         </p>
