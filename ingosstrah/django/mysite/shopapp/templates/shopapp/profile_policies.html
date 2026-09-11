@@ -1,0 +1,88 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мои страховки</title>
+    {% load static %}
+    <link
+      rel="stylesheet"
+      href="{% static 'shopapp/css/profile_policies.css' %}"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <a href="{% url 'insurance_list' %}" class="logo">ГлавсСтрах</a>
+        <nav class="nav-links">
+          <a href="{% url 'insurance_list' %}">Каталог</a>
+          <a href="#" class="active">Мои полисы</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container" style="margin-top: 40px; margin-bottom: 40px">
+      <h1>Ваши страховые полисы</h1>
+      <p>Актуальный статус и сроки действия ваших договоров.</p>
+
+      {% if messages %} {% for message in messages %}
+      <div class="alert-message">{{ message }}</div>
+      {% endfor %} {% endif %} {% if policies %}
+      <table class="policy-table">
+        <thead>
+          <tr>
+            <th>Номер полиса</th>
+            <th>Продукт</th>
+            <th>Дата окончания</th>
+            <th>Осталось дней</th>
+            <th>Статус</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for policy in policies %}
+          <tr>
+            <td><strong>{{ policy.policy_number }}</strong></td>
+            <td>{{ policy.insurance.title }}</td>
+            <td>{{ policy.end_date|date:"d.m.Y" }}</td>
+            <td>
+              {% if policy.is_expired %}
+              <span style="color: #64748b">Истёк</span>
+              {% else %}
+              <span
+                class="{% if policy.days_left <= 30 %}warning-days{% endif %}"
+              >
+                {{ policy.days_left }} дн.
+              </span>
+              {% endif %}
+            </td>
+            <td>
+              <span
+                class="status-badge {% if policy.status == 'active' %}status-active{% else %}status-expired{% endif %}"
+              >
+                {{ policy.get_status_display }}
+              </span>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% else %}
+      <div class="no-data" style="margin-top: 20px">
+        <p>
+          У вас пока нет оформленных страховок.
+          <a href="{% url 'insurance_list' %}" style="color: var(--accent-blue)"
+            >Перейти в каталог</a
+          >
+        </p>
+      </div>
+      {% endif %}
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 ГлавсСтрах. Все права защищены.</p>
+      </div>
+    </footer>
+  </body>
+</html>

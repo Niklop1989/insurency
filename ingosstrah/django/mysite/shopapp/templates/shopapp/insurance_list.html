@@ -1,0 +1,81 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Страховой Полис — Автопарк</title>
+    <link
+      rel="stylesheet"
+      href="{% static 'shopapp/css/insurance_list.css' %}"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <a href="{% url 'shopapp:insurance_list' %}" class="logo">ГлавсСтрах</a>
+        <nav class="nav-links">
+          <a href="{% url 'shopapp:insurance_list' %}" class="active">Услуги</a>
+          {% if user.is_authenticated %}
+          <a href="{% url 'shopapp:profile_policies' %}">Личный кабинет</a>
+          {% else %} hello {% endif %}
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Надежная страховка для вашей уверенности</h1>
+        <p>Оформите полис онлайн за 5 минут без визита в офис</p>
+      </div>
+    </section>
+
+    <main class="container page-content">
+      <aside class="filter-sidebar">
+        <h3>Поиск страховки</h3>
+        <form method="get" action="">
+          <div class="form-group">
+            <label for="category">Категория:</label>
+            <select name="category" id="category">
+              <option value="">Все категории</option>
+              <option value="auto">Автострахование</option>
+              <option value="health">Медицина</option>
+              <option value="property">Имущество</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Показать</button>
+        </form>
+      </aside>
+
+      <section class="products-grid">
+        {% for insurance in insurances %}
+        <div class="card">
+          <div class="card-body">
+            <span class="badge">{{ insurance.get_category_display }}</span>
+            <h2 class="card-title">{{ insurance.title }}</h2>
+            <p class="card-text">{{ insurance.description }}</p>
+            <div class="card-footer">
+              <span class="price">от {{ insurance.price }} ₽/год</span>
+              <a
+                href="{% url 'buy_insurance' insurance.id %}"
+                class="btn btn-secondary"
+                >Оформить</a
+              >
+            </div>
+          </div>
+        </div>
+        {% empty %}
+        <div class="no-data">
+          <p>Доступных страховых продуктов пока нет.</p>
+        </div>
+        {% endfor %}
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 ГлавсСтрах. Все права защищены. Лицензия ЦБ РФ.</p>
+      </div>
+    </footer>
+  </body>
+</html>

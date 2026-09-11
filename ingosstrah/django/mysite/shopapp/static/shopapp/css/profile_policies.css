@@ -1,0 +1,199 @@
+/* Базовые настройки и палитра */
+:root {
+    --primary-blue: #0f4c81;
+    --light-blue: #eef5fc;
+    --accent-blue: #2563eb;
+    --dark-blue: #1e293b;
+    --white: #ffffff;
+    --gray-text: #64748b;
+    --border-color: #cbd5e1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Шапка сайта */
+.navbar {
+    background-color: var(--primary-blue);
+    padding: 1rem 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--white);
+}
+
+/* Заголовки кабинета */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: var(--primary-blue);
+}
+
+main > p {
+    color: var(--gray-text);
+    margin-bottom: 30px;
+}
+
+/* Всплывающие уведомления Django (Alerts) */
+.alert-message {
+    padding: 15px;
+    background-color: #dbeafe;
+    color: #1e40af;
+    border-left: 4px solid var(--accent-blue);
+    border-radius: 4px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+/* Таблица полисов */
+.policy-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.policy-table th, .policy-table td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.policy-table th {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    font-weight: 600;
+}
+
+/* Статусы */
+.status-badge {
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.status-active {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.status-expired {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+/* Внимание: осталось мало дней */
+.warning-days {
+    color: #b45309;
+    font-weight: bold;
+    background-color: #fef3c7;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+/* Пустое состояние (нет полисов) */
+.no-data {
+    text-align: center;
+    padding: 50px;
+    background: var(--white);
+    border-radius: 8px;
+    color: var(--gray-text);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.no-data a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.no-data a:hover {
+    text-decoration: underline;
+}
+
+/* Подвал */
+.footer {
+    background-color: var(--dark-blue);
+    color: #94a3b8;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+/* Адаптивность таблицы для телефонов */
+@media (max-width: 600px) {
+    .policy-table, .policy-table tbody, .policy-table tr, .policy-table td {
+        display: block;
+        width: 100%;
+    }
+    .policy-table thead {
+        display: none;
+    }
+    .policy-table tr {
+        margin-bottom: 15px;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+    }
+    .policy-table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        border-bottom: 1px dashed var(--border-color);
+    }
+    .policy-table td:last-child {
+        border-bottom: none;
+    }
+    .policy-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 20px;
+        width: 45%;
+        text-align: left;
+        font-weight: bold;
+        color: var(--gray-text);
+    }
+}
